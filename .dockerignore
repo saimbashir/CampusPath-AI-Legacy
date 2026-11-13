@@ -1,0 +1,11 @@
+.env
+.venv
+*.db
+*.db-*
+__pycache__
+.pytest_cache
+.git
+
+backups
+node_modules
+tests/ui/fixtures.json

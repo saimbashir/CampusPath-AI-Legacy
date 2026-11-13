@@ -1,0 +1,29 @@
+{
+  "methodology": "Three sample-course queries; relevance labels by exact subject passage, k=4. This is a tiny sanity benchmark, not a held-out educational evaluation. Missing results count against precision.",
+  "results": [
+    {
+      "query": "What does A* use for its priority?",
+      "precision_at_4": 0.25,
+      "recall_at_4": 1.0,
+      "latency_ms": 6.25,
+      "relevant_count": 1,
+      "returned_count": 4
+    },
+    {
+      "query": "What structure does BFS use?",
+      "precision_at_4": 0.75,
+      "recall_at_4": 1.0,
+      "latency_ms": 0.89,
+      "relevant_count": 3,
+      "returned_count": 4
+    },
+    {
+      "query": "Explain minimax and the opponent",
+      "precision_at_4": 0.5,
+      "recall_at_4": 1.0,
+      "latency_ms": 3.57,
+      "relevant_count": 2,
+      "returned_count": 2
+    }
+  ]
+}

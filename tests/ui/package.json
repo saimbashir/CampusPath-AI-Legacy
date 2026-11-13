@@ -1,0 +1,1 @@
+{"private":true,"description":"Optional DOM QA only; not required to run CampusPath","devDependencies":{"jsdom":"30.1.2"}}

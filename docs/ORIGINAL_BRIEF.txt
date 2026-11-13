@@ -1,0 +1,3129 @@
+# MASTER BUILD COMMAND — CAMPUSPATH AI
+
+You are now the PRINCIPAL ENGINEER and PRODUCT OWNER for a large AI software project named:
+
+# CAMPUSPATH AI
+## Intelligent Adaptive Learning, Assessment & Teaching Platform
+
+Your responsibility is not to make a mockup.
+
+Your responsibility is to:
+
+DESIGN
+→ ARCHITECT
+→ IMPLEMENT
+→ TEST
+→ DEBUG
+→ POLISH
+→ DOCUMENT
+→ PACKAGE
+→ PREPARE FOR DEPLOYMENT
+
+the complete application.
+
+You must work as:
+
+- Senior Python Engineer
+- AI Engineer
+- LLM Engineer
+- Backend Engineer
+- Frontend Engineer
+- Database Architect
+- ML Engineer
+- UX/UI Designer
+- Security Engineer
+- QA Engineer
+- DevOps Engineer
+
+You must maintain one coherent project from beginning to end.
+
+Do not create disconnected prototypes.
+
+Do not repeatedly rebuild the application from scratch.
+
+Preserve previously working functionality.
+
+Before changing existing code, understand it.
+
+After every major change, run and verify the project.
+
+==================================================
+PART A — WHAT CAMPUSPATH IS
+==================================================
+
+CampusPath AI is NOT:
+
+- ChatGPT clone
+- PDF chatbot
+- simple quiz website
+- normal LMS
+- static dashboard
+- generic RAG application
+
+CampusPath is an AI-powered adaptive educational operating system.
+
+Its main purpose is to build a continuously changing understanding of each student's knowledge.
+
+For every student, CampusPath should determine:
+
+- what they understand
+- what they do not understand
+- what misconceptions they have
+- what prerequisite knowledge they may be missing
+- how confident the system is
+- what they should learn next
+- what type of explanation works better for them
+- what question difficulty is appropriate
+- when they should revise a concept
+- whether they have mastered a concept
+- how prepared they are for upcoming assessments
+
+For teachers, CampusPath should determine:
+
+- which concepts the class understands
+- which concepts are difficult
+- which misconceptions are common
+- which students are progressing well
+- which students may require support
+- what prerequisite gaps exist
+- which CLOs are underperforming
+- what remedial lesson may help
+
+The project must combine several real AI techniques rather than putting everything inside one LLM prompt.
+
+Core technologies/concepts:
+
+LLMs
+RAG
+Semantic Search
+Embeddings
+Vector Databases
+Knowledge Graphs
+Knowledge Tracing
+Adaptive Assessment
+Misconception Detection
+Recommendation Systems
+Multimodal AI
+Speech-to-Text
+Text-to-Speech
+Realtime Voice AI
+Explainable AI
+Learning Analytics
+Multi-Agent Architecture
+Bloom's Taxonomy
+CLO Mapping
+Spaced Repetition
+Personalized Study Planning
+
+==================================================
+PART B — PRODUCT PHILOSOPHY
+==================================================
+
+CampusPath follows this closed learning loop:
+
+Teacher creates account
+↓
+Teacher creates course
+↓
+Teacher uploads materials
+↓
+AI builds Course Digital Twin
+↓
+AI extracts topics
+↓
+AI determines prerequisite relationships
+↓
+Teacher reviews/edits AI output
+↓
+Student joins course
+↓
+Student completes diagnostic assessment
+↓
+CampusPath creates Student Knowledge Model
+↓
+Personalized learning path generated
+↓
+Student learns
+↓
+Student attempts adaptive assessment
+↓
+Answer is evaluated
+↓
+Misconceptions detected
+↓
+Prerequisite weaknesses investigated
+↓
+Personalized remediation generated
+↓
+Student attempts new assessment
+↓
+Mastery updated
+↓
+Revision scheduled
+↓
+Teacher analytics updated
+
+This feedback loop is the heart of CampusPath.
+
+==================================================
+PART C — IMPLEMENTATION PRINCIPLES
+==================================================
+
+Follow these rules throughout development.
+
+1. Use Python as the main programming language.
+
+2. Do not put the entire project into one Python file.
+
+3. Use modular architecture.
+
+4. Use deterministic Python algorithms where they make more sense than an LLM.
+
+For example:
+
+mastery calculation → Python
+authorization → Python
+graph traversal → Python
+statistics → Python
+scheduling → Python
+
+Use LLM primarily for:
+
+explanations
+content understanding
+question generation
+answer interpretation
+misconception interpretation
+summarization
+tutoring
+
+5. Do not hard-code API credentials.
+
+6. Do not leave buttons that do nothing.
+
+7. If an external AI provider is unavailable, provide DEMO_MODE.
+
+8. Every important AI output must be validated.
+
+9. Do not trust generated structured data without validation.
+
+10. Do not destroy working features while adding new ones.
+
+==================================================
+PART D — TECHNOLOGY STACK
+==================================================
+
+Use:
+
+Python 3.12+
+
+Backend:
+FastAPI
+
+Validation:
+Pydantic
+
+ORM:
+SQLAlchemy
+
+Migrations:
+Alembic
+
+Development database:
+SQLite
+
+Production database architecture:
+PostgreSQL
+
+Vector database:
+prefer Qdrant or ChromaDB
+
+Create abstraction so vector database can be changed later.
+
+Frontend:
+
+Use a professional browser-based frontend integrated with FastAPI.
+
+Preferred initial approach:
+
+HTML5
+CSS3
+modern JavaScript
+Jinja templates where appropriate
+
+You may use a lightweight frontend framework only if it materially improves maintainability.
+
+Do NOT introduce unnecessary Node/npm complexity unless genuinely useful.
+
+Charts:
+interactive chart library
+
+Graph visualization:
+use an appropriate lightweight graph visualization library.
+
+Icons:
+use one consistent professional icon family.
+
+Avoid random emojis as primary interface icons.
+
+==================================================
+PART E — PROJECT STRUCTURE
+==================================================
+
+Use a maintainable structure similar to:
+
+campuspath/
+│
+├── app/
+│   ├── main.py
+│
+│   ├── api/
+│   ├── auth/
+│   ├── models/
+│   ├── schemas/
+│   ├── services/
+│
+│   ├── ai/
+│   │   ├── providers/
+│   │   ├── prompts/
+│   │   ├── orchestrator/
+│   │   └── structured_outputs/
+│
+│   ├── agents/
+│   ├── rag/
+│   ├── embeddings/
+│   ├── documents/
+│   ├── knowledge_graph/
+│   ├── mastery/
+│   ├── assessment/
+│   ├── recommendations/
+│   ├── voice/
+│   ├── analytics/
+│   ├── security/
+│
+│   ├── templates/
+│   └── static/
+│
+├── migrations/
+├── tests/
+├── scripts/
+├── sample_data/
+├── docs/
+│
+├── requirements.txt
+├── .env.example
+├── Dockerfile
+├── docker-compose.yml
+└── README.md
+
+Improve structure when necessary.
+
+==================================================
+PART F — BEAUTIFUL UI/UX
+==================================================
+
+CampusPath should look like a premium modern AI education product.
+
+Visual style:
+
+- professional university platform
+- dark and light mode
+- navy background
+- cyan / blue / violet AI accents
+- subtle glass panels
+- excellent typography
+- clear cards
+- rounded containers
+- subtle gradients
+- meaningful icons
+- smooth transitions
+
+Avoid childish educational design.
+
+Avoid generic Bootstrap dashboard appearance.
+
+Responsive layouts must work at:
+
+360px
+390px
+430px
+768px
+1024px
+desktop
+
+Mobile UI must be genuinely usable.
+
+Desktop sidebar should transform into an appropriate mobile navigation system.
+
+Animations:
+
+- smooth card transitions
+- skeleton loading
+- AI thinking indicator
+- voice microphone pulse
+- graph animations
+- animated mastery bars
+- chart transitions
+- success confirmation
+
+Respect:
+
+prefers-reduced-motion
+
+Do not introduce lag.
+
+==================================================
+PART G — LANDING PAGE
+==================================================
+
+Create an impressive landing page.
+
+Hero:
+
+“Every student learns differently.
+CampusPath adapts.”
+
+Explain:
+
+Adaptive Learning
+AI Tutor
+Voice Viva
+Course Digital Twin
+Knowledge Graph
+Teacher Intelligence
+Multimodal Learning
+Learning Analytics
+
+Buttons:
+
+Student Demo
+Teacher Demo
+Login
+Create Account
+
+==================================================
+PART H — USER ROLES
+==================================================
+
+Support:
+
+STUDENT
+TEACHER
+ADMIN
+
+Role permissions must be enforced in the backend.
+
+Hiding a frontend button is NOT security.
+
+==================================================
+PART I — AUTHENTICATION
+==================================================
+
+Both students and teachers must create real accounts.
+
+Implement:
+
+Register
+Login
+Logout
+Forgot Password architecture
+Password Reset architecture
+Secure password hashing
+Session expiration
+Protected endpoints
+Secure cookies or secure token architecture
+Rate limiting for login
+CSRF protection where required
+Input validation
+
+==================================================
+PART J — STUDENT REGISTRATION
+==================================================
+
+Student fields:
+
+Full Name
+University ID
+Email
+Password
+Confirm Password
+Department
+Degree Program
+Semester
+Campus
+Optional profile image
+
+Example:
+
+Name:
+Saim Bashir
+
+University ID:
+23F-1234
+
+Program:
+BS Software Engineering
+
+University ID must be treated as an important student identifier.
+
+==================================================
+PART K — TEACHER REGISTRATION
+==================================================
+
+Teacher must also create an account.
+
+Fields:
+
+Full Name
+University/Institute ID
+Email
+Password
+Department
+Designation
+Profile Picture
+
+Teachers must additionally provide a:
+
+TEACHER ACCESS KEY
+
+or
+
+FACULTY INVITE CODE
+
+Teacher access must NOT be granted only because someone selected “Teacher.”
+
+==================================================
+PART L — TEACHER ACCESS KEY SECURITY
+==================================================
+
+Teacher Access Keys are created by admin.
+
+Never store keys as plaintext.
+
+Store secure hashes.
+
+Support:
+
+expiration
+revocation
+rotation
+usage limit
+optional single use
+created_by
+created_at
+
+Never expose teacher keys in:
+
+JavaScript
+HTML
+Git
+logs
+API response
+
+Wrong key:
+
+teacher privileges rejected.
+
+Teacher still logs in normally afterward using email/password.
+
+The teacher key is authorization for becoming a verified teacher, NOT the teacher's everyday password.
+
+==================================================
+PART M — STRICT STUDENT PRIVACY
+==================================================
+
+Student can access ONLY their own:
+
+profile
+courses
+marks
+mastery
+quizzes
+assignments
+viva
+misconceptions
+recommendations
+study plan
+exam readiness
+analytics
+
+Student A must never see Student B's:
+
+name
+University ID
+marks
+mastery
+answers
+voice transcripts
+misconceptions
+progress
+
+Test direct URL manipulation.
+
+Example:
+
+Student 15 requests:
+
+/api/student/16/mastery
+
+Result:
+
+403 or secure 404.
+
+==================================================
+PART N — TEACHER PERMISSIONS
+==================================================
+
+Teacher may see only students from courses/sections assigned to that teacher.
+
+Teacher must NOT automatically see all university students.
+
+Create relationships:
+
+Teacher
+→ Course
+→ Section
+→ Enrollments
+→ Students
+
+==================================================
+PART O — TEACHER STUDENT DIRECTORY
+==================================================
+
+Teacher can search students using:
+
+Name
+University ID
+Email
+Course
+Section
+
+Student rows should display:
+
+Name
+University ID
+Current Mastery
+Quiz Average
+Assignment Average
+Voice Viva Average
+CLO Attainment
+Exam Readiness
+Learning Trend
+Weakest Topic
+Support Status
+
+==================================================
+PART P — STUDENT PERFORMANCE CATEGORIES
+==================================================
+
+Use professional labels such as:
+
+HIGH PERFORMING
+PROFICIENT
+DEVELOPING
+NEEDS SUPPORT
+
+Never use disrespectful labels.
+
+Do not calculate status using marks alone.
+
+Consider:
+
+mastery
+recent performance
+assessment accuracy
+prerequisite knowledge
+improvement
+missed learning activities
+
+==================================================
+PART Q — TEACHER STUDENT PROFILE
+==================================================
+
+Teacher can open:
+
+STUDENT INTELLIGENCE PROFILE
+
+Show:
+
+Full Name
+University ID
+Section
+Course
+
+Overall Mastery
+Exam Readiness
+Quiz Average
+Assignment Average
+Voice Viva Performance
+Learning Trend
+
+Topic mastery chart
+
+CLO performance
+
+Bloom performance
+
+Misconceptions
+
+Prerequisite gaps
+
+Revision completion
+
+Recent activity
+
+AI recommendations
+
+Teacher notes
+
+==================================================
+PART R — COURSE CREATION
+==================================================
+
+Teacher creates course.
+
+Fields:
+
+Course Name
+Course Code
+Section
+Semester
+Description
+CLOs
+Assessment structure
+
+Generate enrollment code.
+
+Example:
+
+AI-FALL26-A
+
+==================================================
+PART S — LEARNING MATERIAL SUPPORT
+==================================================
+
+Support many educational formats.
+
+DOCUMENTS:
+
+PDF
+DOCX
+PPTX
+TXT
+Markdown
+CSV
+
+IMAGES:
+
+PNG
+JPG
+JPEG
+WEBP
+screenshots
+diagrams
+whiteboards
+handwritten notes
+
+AUDIO:
+
+MP3
+WAV
+M4A
+OGG
+voice notes
+recorded lectures
+
+VIDEO:
+
+MP4
+lecture recordings
+
+CODE:
+
+PY
+CPP
+C
+JAVA
+JS
+HTML
+CSS
+JSON
+
+WEB:
+
+user-supplied public webpage or article where appropriate.
+
+Never execute uploaded code without a secure sandbox.
+
+==================================================
+PART T — RESOURCE OWNERSHIP
+==================================================
+
+Teacher materials:
+
+COURSE MATERIAL
+
+Student materials:
+
+PERSONAL MATERIAL
+
+AI generated:
+
+AI GENERATED
+
+Show clear badges.
+
+Student personal resources are private unless explicitly shared.
+
+==================================================
+PART U — MULTIMODAL PROCESSING PIPELINE
+==================================================
+
+PDF:
+
+Extract
+→ clean
+→ chunk
+→ preserve page number
+→ embed
+→ index
+
+PPTX:
+
+Extract slide text
+→ preserve slide number
+→ index
+
+Image:
+
+OCR
++
+vision analysis
++
+concept extraction
+
+Audio:
+
+Speech-to-Text
+→ timestamps
+→ topic segmentation
+
+Video:
+
+audio extraction
+→ STT
+→ timestamp segmentation
+→ optional representative frame understanding
+
+Code:
+
+language detection
+→ syntax-aware metadata
+→ explanation indexing
+
+==================================================
+PART V — COURSE DIGITAL TWIN
+==================================================
+
+After teacher uploads material, create an AI-generated course structure.
+
+Example:
+
+Artificial Intelligence
+│
+├── Intelligent Agents
+│
+├── Search
+│   ├── BFS
+│   ├── DFS
+│   ├── UCS
+│   ├── Heuristic Search
+│   ├── Greedy Best-First
+│   └── A*
+│
+└── Adversarial Search
+    └── Minimax
+
+Generate:
+
+topics
+subtopics
+prerequisites
+difficulty
+resources
+CLO relationships
+Bloom levels
+
+Teacher must be able to edit everything.
+
+==================================================
+PART W — KNOWLEDGE GRAPH
+==================================================
+
+Create interactive prerequisite graph.
+
+Example:
+
+Functions
+↓
+Recursion
+↓
+DFS
+
+and:
+
+Heuristic
+↓
+Greedy
+↓
+A*
+
+Each node should contain:
+
+mastery
+prerequisites
+dependents
+resources
+CLO
+assessment performance
+
+Clickable graph.
+
+Color states:
+
+mastered
+developing
+weak
+not attempted
+
+==================================================
+PART X — STUDENT KNOWLEDGE MODEL
+==================================================
+
+Maintain persistent knowledge state for every student/topic.
+
+Fields:
+
+mastery_probability
+attempts
+correct_attempts
+incorrect_attempts
+recent_accuracy
+response_time
+hint_usage
+difficulty_history
+last_practiced
+revision_count
+confidence
+misconceptions
+
+Do NOT simply calculate:
+
+correct / total.
+
+Implement a lightweight knowledge tracing algorithm.
+
+A Bayesian Knowledge Tracing-inspired implementation is acceptable.
+
+Keep it modular.
+
+==================================================
+PART Y — DIAGNOSTIC ASSESSMENT
+==================================================
+
+New students should complete an initial diagnostic assessment.
+
+Purpose:
+
+estimate initial mastery.
+
+Identify:
+
+strong concepts
+weak concepts
+missing prerequisites
+starting difficulty
+
+After completion generate:
+
+Initial Knowledge Map
++
+Personalized Learning Path
+
+==================================================
+PART Z — PERSONALIZED LEARNING PATH
+==================================================
+
+Each student gets a different learning sequence.
+
+Example:
+
+BFS 92%
+DFS 85%
+Heuristics 43%
+A* 31%
+
+CampusPath should recommend:
+
+Heuristic remediation
+→ A*
+→ comparison with Greedy
+→ practice
+→ mastery check
+
+Display WHY each activity is recommended.
+
+==================================================
+PART AA — RAG AI TUTOR
+==================================================
+
+Tutor must answer from course resources.
+
+Retrieval pipeline:
+
+Question
+↓
+Query understanding
+↓
+Vector search
+↓
+Metadata filtering
+↓
+Relevant chunks
+↓
+Optional reranking
+↓
+LLM
+↓
+Grounded response
+↓
+Citations
+
+Every answer should show:
+
+source file
+page/slide
+topic
+
+Never fake citations.
+
+==================================================
+PART AB — TUTOR MODES
+==================================================
+
+Provide:
+
+Simple English
+Detailed
+Roman Urdu
+Step-by-step
+Analogy
+Worked Example
+Code Example
+Exam Focus
+Socratic Mode
+
+Remember student preference.
+
+==================================================
+PART AC — SOCRATIC TUTOR
+==================================================
+
+Do not always give final answer.
+
+Example:
+
+Student:
+
+“Solve this A* question.”
+
+Tutor:
+
+“Before solving it, what values form f(n)?”
+
+Continue progressively.
+
+Track number of hints.
+
+==================================================
+PART AD — MISCONCEPTION DETECTION
+==================================================
+
+Detect conceptual errors rather than only right/wrong.
+
+Example:
+
+Student:
+
+“A* chooses the smallest h(n).”
+
+Output:
+
+Possible misconception:
+
+A* confused with Greedy Best-First.
+
+Correct concept:
+
+A* uses:
+
+f(n)=g(n)+h(n)
+
+Save misconception to student history.
+
+==================================================
+PART AE — PREREQUISITE ROOT CAUSE
+==================================================
+
+When student struggles, inspect prerequisite graph.
+
+Example:
+
+DFS low mastery
+
+and
+
+Recursion very low mastery
+
+Output:
+
+“DFS difficulty may be caused by insufficient recursion mastery.”
+
+Explain evidence.
+
+==================================================
+PART AF — ADAPTIVE QUIZ ENGINE
+==================================================
+
+Question difficulty changes dynamically.
+
+Example:
+
+Medium correct
+→ Hard
+
+Hard correct
+→ Transfer question
+
+Hard wrong
+→ Conceptual question
+
+Conceptual wrong
+→ Prerequisite probe
+
+Track:
+
+difficulty
+time
+hints
+correctness
+confidence
+misconception
+
+==================================================
+PART AG — QUESTION GENERATION
+==================================================
+
+Generate questions from course material.
+
+Question metadata:
+
+topic
+CLO
+Bloom level
+difficulty
+correct answer
+explanation
+rubric
+source
+
+==================================================
+PART AH — QUESTION REVIEW AGENT
+==================================================
+
+Before publishing AI-generated question, evaluate:
+
+syllabus relevance
+ambiguity
+correct answer
+difficulty
+Bloom consistency
+CLO consistency
+duplication
+
+Teacher can:
+
+approve
+edit
+reject
+
+==================================================
+PART AI — BLOOM TAXONOMY
+==================================================
+
+Support:
+
+Remember
+Understand
+Apply
+Analyze
+Evaluate
+Create
+
+Teacher can request:
+
+20% Remember
+30% Understand
+30% Apply
+20% Analyze
+
+==================================================
+PART AJ — CLO ANALYTICS
+==================================================
+
+Questions connect to CLOs.
+
+Teacher sees:
+
+CLO-1 82%
+CLO-2 69%
+CLO-3 54%
+
+Allow drill-down.
+
+==================================================
+PART AK — LIVE VOICE AI TUTOR
+==================================================
+
+Build actual conversational voice interaction.
+
+Preferred architecture:
+
+Browser Microphone
+↓
+WebSocket
+↓
+Voice Activity Detection
+↓
+Streaming STT
+↓
+Tutor Orchestrator
+↓
+RAG
+↓
+Student Knowledge Model
+↓
+LLM
+↓
+Streaming TTS
+↓
+Browser Audio
+
+Do NOT train a speech model from scratch.
+
+Use pretrained STT/TTS services/models.
+
+==================================================
+PART AL — LIVE VOICE UI
+==================================================
+
+Voice Tutor screen should show:
+
+AI orb/avatar
+Microphone state
+Waveform
+Listening
+Thinking
+Speaking
+
+Live transcript
+
+AI response
+
+Current topic
+
+Current mastery
+
+Sources
+
+Session duration
+
+Buttons:
+
+Mute
+Stop
+Repeat
+Explain Simpler
+Give Example
+Ask Me a Question
+Switch to Text
+End Session
+
+==================================================
+PART AM — VOICE QUIZ
+==================================================
+
+AI asks question verbally.
+
+Student responds verbally.
+
+Pipeline:
+
+Speech
+↓
+STT
+↓
+Concept analysis
+↓
+Misconception detection
+↓
+Mastery update
+↓
+Follow-up question
+↓
+TTS
+
+==================================================
+PART AN — LIVE VOICE VIVA
+==================================================
+
+Example:
+
+AI:
+
+“What does h(n) mean?”
+
+Student:
+
+“It is cost already travelled.”
+
+System identifies:
+
+g(n)/h(n) confusion.
+
+AI responds:
+
+“You may be mixing g(n) and h(n). Which one represents accumulated path cost?”
+
+Continue dynamically.
+
+==================================================
+PART AO — VOICE PRIVACY
+==================================================
+
+Default:
+
+DO NOT permanently store raw microphone audio.
+
+Store:
+
+transcript
+questions
+concept evaluation
+mastery changes
+misconceptions
+
+Clearly request microphone permission.
+
+==================================================
+PART AP — VOICE TURN MANAGEMENT
+==================================================
+
+For initial stable version use controlled turn taking.
+
+AI finishes
+↓
+microphone activates
+↓
+student speaks
+↓
+VAD detects end
+↓
+student may edit transcript
+↓
+submit
+↓
+AI evaluates
+↓
+AI responds
+
+Also provide:
+
+Finish Answer button.
+
+==================================================
+PART AQ — ROMAN URDU VOICE/TEXT
+==================================================
+
+Architecture should support:
+
+English
+Urdu
+Roman Urdu
+
+Example:
+
+Student:
+
+“Mujhe A* Roman Urdu mein explain karo.”
+
+Tutor should respond appropriately.
+
+Always offer text fallback.
+
+==================================================
+PART AR — MULTIMODAL TUTOR
+==================================================
+
+Student can submit:
+
+photo
+screenshot
+handwritten answer
+diagram
+PDF
+code
+voice
+
+Example:
+
+Student uploads handwritten A* graph.
+
+Asks:
+
+“Where did I make mistake?”
+
+AI explains the relevant step.
+
+==================================================
+PART AS — INTERACTIVE ALGORITHM LAB
+==================================================
+
+Build interactive visual simulations.
+
+At minimum:
+
+BFS
+DFS
+UCS
+A*
+
+Show:
+
+graph
+queue/stack
+visited nodes
+current node
+path
+cost
+
+For A*:
+
+g(n)
+h(n)
+f(n)
+
+Buttons:
+
+Next Step
+Previous Step
+Reset
+Explain Current Step
+
+==================================================
+PART AT — PERSONALIZED REMEDIATION
+==================================================
+
+When student is weak:
+
+Concept explanation
+↓
+Analogy
+↓
+Worked example
+↓
+Guided question
+↓
+Independent question
+↓
+Re-test
+
+If still unsuccessful:
+
+switch teaching approach.
+
+==================================================
+PART AU — LEARNING PREFERENCES
+==================================================
+
+Do NOT claim fixed psychological “learning styles.”
+
+Instead record preferences based on behavior.
+
+Examples:
+
+prefers concise explanations
+frequently chooses Roman Urdu
+benefits from examples
+uses Socratic mode effectively
+performs better after simulations
+
+==================================================
+PART AV — SPACED REVISION
+==================================================
+
+Schedule topic reviews according to:
+
+mastery
+recency
+mistakes
+exam date
+
+Example:
+
+Today
+Tomorrow
++3 days
++7 days
+Before exam
+
+==================================================
+PART AW — STUDY PLANNER
+==================================================
+
+Student enters:
+
+exam date
+available hours
+free days
+target course
+
+System uses:
+
+topic mastery
+topic importance
+prerequisites
+revision schedule
+assignment deadlines
+
+Generate daily study plan.
+
+If activity missed:
+
+intelligently reschedule.
+
+==================================================
+PART AX — EXAM READINESS
+==================================================
+
+Calculate an explainable readiness indicator.
+
+Consider:
+
+syllabus coverage
+mastery
+assessment accuracy
+mock exams
+weak concepts
+revision recency
+
+Example:
+
+Exam Readiness: 73%
+
+Show calculation factors.
+
+Do not claim guaranteed grade prediction.
+
+==================================================
+PART AY — MOCK EXAM
+==================================================
+
+Generate configurable exam:
+
+topics
+total marks
+time
+difficulty
+CLO distribution
+Bloom distribution
+
+After exam show:
+
+overall score
+topic analysis
+CLO analysis
+Bloom analysis
+time usage
+misconceptions
+recommended revision
+
+==================================================
+PART AZ — ASSIGNMENTS
+==================================================
+
+Teacher can:
+
+create
+upload
+generate
+set deadline
+set rubric
+
+Students submit:
+
+text
+PDF
+image
+code
+
+AI may provide formative feedback.
+
+Teacher retains control over official grading.
+
+==================================================
+PART BA — STUDENT DASHBOARD
+==================================================
+
+Show:
+
+Overall Mastery
+Exam Readiness
+Study Streak
+Weak Topics
+Strong Topics
+Scheduled Revision
+Upcoming Assignments
+CLO Progress
+Learning Trend
+Recommended Next Activity
+
+Add:
+
+WHY THIS IS RECOMMENDED
+
+Example:
+
+“Revise Heuristics.”
+
+Reason:
+
+48% mastery
+3 recent errors
+A* depends on Heuristics
+exam in 8 days
+
+==================================================
+PART BB — TEACHER DASHBOARD
+==================================================
+
+Show:
+
+Students count
+Class average
+Mastery distribution
+Strong concepts
+Difficult concepts
+Common misconceptions
+Students needing support
+High-performing students
+CLO attainment
+Assessment completion
+Engagement trend
+
+==================================================
+PART BC — TEACHER AI COPILOT
+==================================================
+
+Teacher can ask:
+
+“Which students need help with A*?”
+
+“Why is CLO-3 weak?”
+
+“Which concept should I revise tomorrow?”
+
+“Generate a 15-minute remediation activity.”
+
+Copilot must query real CampusPath data.
+
+Do not return generic invented answers.
+
+==================================================
+PART BD — TEACHER PERFORMANCE TABLE
+==================================================
+
+Columns:
+
+Name
+University ID
+Section
+Overall Mastery
+Quiz Average
+Assignment Average
+Voice Viva Average
+CLO Attainment
+Exam Readiness
+Trend
+Weakest Topic
+Support Status
+
+Allow:
+
+search
+filter
+sort
+
+==================================================
+PART BE — STUDENTS NEEDING SUPPORT
+==================================================
+
+Example:
+
+Ahmed Khan
+23F-4123
+
+A* mastery: 34%
+Heuristic prerequisite: 39%
+Repeated misconceptions: 3
+Missed revisions: 2
+
+Recommendation:
+
+Review Heuristics before continuing A*.
+
+==================================================
+PART BF — TOP STUDENTS
+==================================================
+
+Teacher may inspect:
+
+Highest mastery
+Best improvement
+Highest CLO attainment
+Best revision consistency
+
+Do not expose public rankings to students by default.
+
+==================================================
+PART BG — TEACHER NOTES
+==================================================
+
+Teacher may save private notes.
+
+Example:
+
+“Understands theory but struggles with calculation.”
+
+Default:
+
+Teacher-only.
+
+Optional:
+
+Share with Student.
+
+==================================================
+PART BH — EXPLAINABLE AI
+==================================================
+
+Important recommendations must include:
+
+Decision
+Why
+Evidence
+Confidence
+
+Example:
+
+Decision:
+
+Review Heuristics.
+
+Evidence:
+
+mastery 44%
+three recent mistakes
+prerequisite for A*
+quiz #4
+voice viva #2
+
+==================================================
+PART BI — EARLY SUPPORT SIGNALS
+==================================================
+
+Detect patterns:
+
+falling mastery
+repeated misconception
+missed assessments
+low progress
+weak prerequisite
+
+Label:
+
+May Need Additional Support
+
+Never make insulting judgments.
+
+==================================================
+PART BJ — WHAT-IF SIMULATOR
+==================================================
+
+Teacher:
+
+“What if I revise Heuristics before A*?”
+
+System estimates likely affected students.
+
+Student:
+
+“I only have 3 hours before exam.”
+
+System recommends highest-impact topics.
+
+==================================================
+PART BK — MULTI-AGENT ARCHITECTURE
+==================================================
+
+Create real modules/agents:
+
+ORCHESTRATOR
+
+CURRICULUM AGENT
+
+Responsibilities:
+
+topic extraction
+course structure
+prerequisites
+
+TUTOR AGENT
+
+RAG
+explanation
+
+ASSESSMENT AGENT
+
+question generation
+adaptive difficulty
+
+EVALUATION AGENT
+
+answer evaluation
+question validation
+
+STUDENT MODEL AGENT
+
+knowledge state
+mastery
+
+RECOMMENDATION AGENT
+
+next action
+study plan
+
+ANALYTICS AGENT
+
+class/student analytics
+
+TEACHER COPILOT
+
+class reasoning
+
+Do not create fake “agents” that are just labels.
+
+==================================================
+PART BL — PROVIDER ABSTRACTION
+==================================================
+
+Create interfaces:
+
+LLMProvider
+
+EmbeddingProvider
+
+SpeechToTextProvider
+
+TextToSpeechProvider
+
+RealtimeVoiceProvider
+
+VisionProvider
+
+Allow provider changes via configuration.
+
+==================================================
+PART BM — DEMO MODE
+==================================================
+
+CampusPath MUST support:
+
+DEMO_MODE=true
+
+Why:
+
+University presentation must work even without:
+
+internet
+LLM key
+voice provider
+vector service
+
+Seed demo course:
+
+Artificial Intelligence
+
+Topics:
+
+Intelligent Agents
+BFS
+DFS
+UCS
+Heuristics
+Greedy Best-First
+A*
+Minimax
+
+Seed several students with realistic performance.
+
+==================================================
+PART BN — FEATURE FALLBACKS
+==================================================
+
+Realtime voice unavailable:
+
+record answer
+→ STT
+→ text LLM
+→ TTS
+
+STT unavailable:
+
+typed answer.
+
+TTS unavailable:
+
+text answer.
+
+LLM unavailable:
+
+Demo-mode deterministic response.
+
+Vector database unavailable:
+
+demo retrieval.
+
+Never show a blank broken experience.
+
+==================================================
+PART BO — DATABASE ENTITIES
+==================================================
+
+Implement at minimum:
+
+User
+
+StudentProfile
+
+TeacherProfile
+
+AdminProfile
+
+TeacherAccessKey
+
+Department
+
+Program
+
+Course
+
+Section
+
+TeacherCourseAssignment
+
+Enrollment
+
+CourseResource
+
+StudentResource
+
+Topic
+
+TopicPrerequisite
+
+CLO
+
+TopicCLO
+
+Question
+
+Assessment
+
+AssessmentQuestion
+
+Attempt
+
+Answer
+
+TopicMastery
+
+Misconception
+
+LearningActivity
+
+LearningRecommendation
+
+RevisionSchedule
+
+Assignment
+
+Submission
+
+VoiceTutorSession
+
+VoiceVivaSession
+
+VoiceTranscript
+
+StudentSupportSignal
+
+TeacherPrivateNote
+
+Notification
+
+AuditLog
+
+StudentPerformanceSnapshot
+
+LearningPreference
+
+==================================================
+PART BP — AUDIT LOG
+==================================================
+
+Record important teacher/admin actions:
+
+login
+student record viewed
+marks changed
+report exported
+teacher note added
+teacher key generated
+teacher key revoked
+
+==================================================
+PART BQ — SECURITY TESTS
+==================================================
+
+Automated tests must prove:
+
+Student A cannot view Student B.
+
+Student cannot access teacher endpoint.
+
+Student cannot promote themselves.
+
+Invalid teacher key rejected.
+
+Revoked teacher key rejected.
+
+Teacher A cannot view unrelated course.
+
+Teacher can view students from assigned course.
+
+Unauthenticated sensitive APIs rejected.
+
+==================================================
+PART BR — RESEARCH/EVALUATION MODULE
+==================================================
+
+CampusPath is an AI university project.
+
+Create research-style evaluation.
+
+RAG:
+
+Precision@K
+Recall@K
+Latency
+
+Adaptive learning:
+
+Mastery before remediation
+Mastery after remediation
+Attempts to mastery
+
+Question generation:
+
+Teacher approval rate
+
+Voice Viva:
+
+transcription latency
+evaluation accuracy where manually labeled
+
+Display experiment methodology.
+
+==================================================
+PART BS — REQUIRED SCREENS
+==================================================
+
+PUBLIC:
+
+Landing
+Login
+Register
+Forgot Password
+
+STUDENT:
+
+Dashboard
+My Courses
+Course Overview
+Learning Path
+Topic Learning
+AI Tutor
+Live Voice Tutor
+Multimodal Tutor
+Adaptive Quiz
+Voice Viva
+Knowledge Graph
+Algorithm Lab
+Assignments
+Personal Materials
+Study Planner
+Revision Calendar
+Mock Exam
+Exam Readiness
+Progress Analytics
+Notifications
+Settings
+
+TEACHER:
+
+Dashboard
+My Courses
+Create Course
+Course Digital Twin
+Material Manager
+Topic Graph Editor
+Students
+Student Intelligence Profile
+Class Analytics
+Students Needing Support
+Assessment Builder
+Question Approval
+Assignments
+Voice Viva Analytics
+CLO Analytics
+Bloom Analytics
+Misconception Analytics
+Teacher Copilot
+Reports
+Notifications
+Settings
+
+ADMIN:
+
+Dashboard
+Users
+Teacher Verification
+Teacher Access Keys
+Course Assignments
+System Health
+Provider Configuration
+Audit Logs
+
+==================================================
+PART BT — STUDENT NAVIGATION PRIVACY
+==================================================
+
+Student navigation must NOT contain:
+
+All Students
+
+Other Students
+
+Class Marks
+
+Teacher Analytics
+
+Public Rankings
+
+==================================================
+PART BU — SEARCH
+==================================================
+
+Implement global course search for:
+
+topics
+lectures
+resources
+questions
+
+Teacher search also supports:
+
+student name
+University ID
+
+==================================================
+PART BV — NOTIFICATIONS
+==================================================
+
+Student:
+
+revision due
+assignment due
+mastery milestone
+recommended activity
+
+Teacher:
+
+CLO problem
+misconception spike
+pending question approval
+students needing support
+
+==================================================
+PART BW — ACCESSIBILITY
+==================================================
+
+Implement:
+
+Keyboard navigation
+
+Focus indicators
+
+Readable contrast
+
+Captions/transcripts
+
+Responsive layout
+
+Reduced motion
+
+Semantic HTML
+
+==================================================
+PART BX — ERROR STATES
+==================================================
+
+Design proper states for:
+
+Upload failed
+Unsupported file
+AI unavailable
+Voice permission denied
+No microphone
+No retrieval result
+Empty course
+No assessments
+Vector DB unavailable
+Session expired
+
+==================================================
+PART BY — TESTING
+==================================================
+
+Unit tests:
+
+mastery calculation
+knowledge tracing
+adaptive difficulty
+prerequisite reasoning
+recommendation engine
+authorization
+
+API tests:
+
+auth
+courses
+resources
+quiz
+analytics
+teacher access
+
+Integration test:
+
+complete A* learning journey.
+
+==================================================
+PART BZ — DOCUMENTATION
+==================================================
+
+Create:
+
+README.md
+
+docs/architecture.md
+
+docs/ai_pipeline.md
+
+docs/rag.md
+
+docs/knowledge_tracing.md
+
+docs/authentication.md
+
+docs/security.md
+
+docs/voice_ai.md
+
+docs/demo_script.md
+
+README includes:
+
+installation
+environment variables
+demo credentials
+database setup
+AI providers
+testing
+deployment
+screenshots
+limitations
+future work
+
+==================================================
+PART CA — LOCAL RUN EXPERIENCE
+==================================================
+
+Final project should be simple to launch.
+
+Target workflow:
+
+python -m venv .venv
+
+activate environment
+
+pip install -r requirements.txt
+
+copy .env.example .env
+
+python scripts/seed_demo.py
+
+uvicorn app.main:app --reload
+
+Open:
+
+http://localhost:8000
+
+==================================================
+PART CB — DOCKER
+==================================================
+
+Provide:
+
+Dockerfile
+
+docker-compose.yml
+
+.env.example
+
+No secrets inside repository.
+
+==================================================
+PART CC — FINAL PRESENTATION STORY
+==================================================
+
+Prepare this exact demonstration.
+
+STEP 1 — STUDENT LOGIN
+
+Login as:
+
+Saim Bashir
+23F-1234
+
+Student dashboard shows ONLY this student's information.
+
+Current mastery:
+
+BFS 90%
+DFS 85%
+Heuristics 48%
+A* 39%
+
+STEP 2 — AI TUTOR
+
+Student asks:
+
+“Explain A* in Roman Urdu according to Lecture 6.”
+
+CampusPath retrieves Lecture 6.
+
+Displays:
+
+answer
+
+Lecture 6
+Slide 18
+
+STEP 3 — KNOWLEDGE GRAPH
+
+Graph shows:
+
+Heuristics
+↓
+A*
+
+A* weak.
+
+STEP 4 — ADAPTIVE QUIZ
+
+Student incorrectly selects only h(n).
+
+CampusPath detects:
+
+A* vs Greedy misconception.
+
+STEP 5 — PERSONALIZED REMEDIATION
+
+System gives:
+
+short explanation
+
+comparison
+
+interactive A* example
+
+STEP 6 — LIVE VOICE VIVA
+
+AI asks verbally:
+
+“What does h(n) represent?”
+
+Student answers.
+
+System evaluates transcript.
+
+Shows:
+
+concept coverage
+
+missing information
+
+misconception
+
+mastery impact
+
+STEP 7 — FOLLOW-UP
+
+AI asks another adaptive viva question.
+
+STEP 8 — MASTERY UPDATE
+
+A* mastery:
+
+39%
+→
+55%
+
+STEP 9 — REVISION
+
+CampusPath schedules:
+
+tomorrow
+
+3 days
+
+7 days
+
+STEP 10 — PRIVACY TEST
+
+Student tries to open:
+
+/teacher/students
+
+CampusPath:
+
+ACCESS DENIED.
+
+Student tries another student's URL.
+
+ACCESS DENIED.
+
+STEP 11 — TEACHER LOGIN
+
+Logout.
+
+Teacher logs in.
+
+Verified teacher account.
+
+Teacher searches:
+
+23F-1234
+
+CampusPath finds:
+
+Saim Bashir
+
+Teacher sees:
+
+mastery
+
+quiz
+
+viva
+
+CLO
+
+misconceptions
+
+trend
+
+STEP 12 — CLASS ANALYTICS
+
+Teacher sees:
+
+62% class confusion:
+
+A* g(n) vs h(n)
+
+STEP 13 — TEACHER COPILOT
+
+Teacher asks:
+
+“Which students need A* remediation?”
+
+CampusPath returns authorized actual students.
+
+STEP 14
+
+Teacher asks:
+
+“Generate a 15-minute remedial activity.”
+
+CampusPath creates the plan.
+
+This presentation should clearly prove:
+
+AI
+
+adaptation
+
+voice
+
+security
+
+teacher/student separation
+
+knowledge tracing
+
+RAG
+
+analytics
+
+==================================================
+PART CD — EXECUTION PLAN
+==================================================
+
+Do NOT attempt to randomly build everything simultaneously.
+
+Execute these phases.
+
+PHASE 0 — ANALYSIS
+
+Before coding:
+
+create:
+
+PROJECT_PLAN.md
+
+ARCHITECTURE.md
+
+TASKS.md
+
+DATABASE_PLAN.md
+
+Do not spend excessive time planning.
+
+Then implement.
+
+PHASE 1 — FOUNDATION
+
+Project structure
+
+FastAPI
+
+database
+
+migrations
+
+base frontend
+
+design system
+
+authentication
+
+role system
+
+PHASE 2 — STUDENT/TEACHER SECURITY
+
+Student registration
+
+Teacher registration
+
+Teacher Access Keys
+
+Authorization
+
+Course/Section ownership
+
+Security tests
+
+PHASE 3 — COURSE SYSTEM
+
+Courses
+
+Sections
+
+Enrollments
+
+Material upload
+
+Material permissions
+
+PHASE 4 — COURSE DIGITAL TWIN
+
+Parsing
+
+Topic extraction
+
+Prerequisites
+
+CLO
+
+Teacher editing
+
+PHASE 5 — RAG
+
+Extraction
+
+Chunking
+
+Embeddings
+
+Vector store
+
+Hybrid retrieval
+
+Citations
+
+AI Tutor
+
+PHASE 6 — STUDENT MODEL
+
+Diagnostic assessment
+
+Knowledge tracing
+
+Mastery
+
+Prerequisite reasoning
+
+Learning path
+
+PHASE 7 — ADAPTIVE ASSESSMENT
+
+Question generation
+
+Question review
+
+Adaptive difficulty
+
+Misconception detection
+
+PHASE 8 — PERSONALIZED REMEDIATION
+
+Tutoring strategies
+
+Socratic mode
+
+Recommendations
+
+Spaced repetition
+
+PHASE 9 — KNOWLEDGE GRAPH
+
+Interactive graph
+
+Student mastery overlay
+
+Teacher class graph
+
+PHASE 10 — VOICE AI
+
+STT
+
+TTS
+
+WebSockets
+
+VAD
+
+Voice Tutor
+
+Voice Quiz
+
+Voice Viva
+
+Fallbacks
+
+PHASE 11 — MULTIMODAL AI
+
+images
+
+handwriting
+
+audio
+
+video transcript
+
+code
+
+PHASE 12 — TEACHER INTELLIGENCE
+
+Student directory
+
+Student intelligence profile
+
+Class analytics
+
+CLO
+
+Bloom
+
+Misconception analytics
+
+Teacher Copilot
+
+PHASE 13 — STUDY TOOLS
+
+Study Planner
+
+Revision Calendar
+
+Mock Exam
+
+Exam Readiness
+
+PHASE 14 — ALGORITHM LAB
+
+BFS
+
+DFS
+
+UCS
+
+A*
+
+visualization
+
+AI explanations
+
+PHASE 15 — RESEARCH DASHBOARD
+
+RAG evaluation
+
+adaptive learning evaluation
+
+voice evaluation
+
+PHASE 16 — POLISH
+
+Mobile
+
+Accessibility
+
+Light/dark
+
+Animations
+
+Error states
+
+Performance
+
+PHASE 17 — TESTING
+
+unit
+
+API
+
+integration
+
+security
+
+PHASE 18 — DEPLOYMENT
+
+Docker
+
+README
+
+environment setup
+
+demo seed
+
+deployment docs
+
+==================================================
+PART CE — HOW YOU MUST WORK
+==================================================
+
+At the beginning of every phase:
+
+1. inspect current repository
+
+2. identify relevant existing files
+
+3. state internally what needs changing
+
+4. modify minimum necessary files
+
+5. preserve working architecture
+
+6. run tests
+
+7. launch application when useful
+
+8. inspect errors
+
+9. fix errors immediately
+
+10. only then continue
+
+Never knowingly leave the repository broken while moving to the next phase.
+
+==================================================
+PART CF — TASK TRACKING
+==================================================
+
+Maintain:
+
+TASKS.md
+
+Use statuses:
+
+TODO
+
+IN PROGRESS
+
+DONE
+
+BLOCKED
+
+Keep this accurate.
+
+Do not claim DONE unless implemented and verified.
+
+==================================================
+PART CG — NO FAKE COMPLETION
+==================================================
+
+Never say a feature is working if it is only:
+
+a screenshot
+
+a fake card
+
+a static button
+
+a hard-coded animation
+
+Clearly classify each feature as:
+
+WORKING
+
+DEMO-SIMULATED
+
+PARTIAL
+
+REQUIRES EXTERNAL PROVIDER
+
+NOT IMPLEMENTED
+
+==================================================
+PART CH — UI VALIDATION
+==================================================
+
+Whenever a major screen is complete:
+
+inspect actual rendered output.
+
+Check:
+
+spacing
+
+overflow
+
+mobile responsiveness
+
+text overlap
+
+navigation
+
+buttons
+
+forms
+
+charts
+
+empty states
+
+loading states
+
+Do not judge UI quality only from source code.
+
+==================================================
+PART CI — PERFORMANCE
+==================================================
+
+Avoid unnecessarily heavy dependencies.
+
+Use asynchronous processing for slow AI operations where suitable.
+
+Do not block entire UI while processing.
+
+Use:
+
+loading state
+
+progress state
+
+background-safe task architecture
+
+==================================================
+PART CJ — FINAL ACCEPTANCE TEST
+==================================================
+
+Before declaring completion verify:
+
+Authentication works.
+
+Student privacy works.
+
+Teacher verification works.
+
+Course creation works.
+
+Course enrollment works.
+
+Materials upload.
+
+RAG retrieval.
+
+Citations.
+
+Tutor.
+
+Diagnostic assessment.
+
+Mastery updates.
+
+Knowledge graph.
+
+Adaptive quiz.
+
+Misconception detection.
+
+Personalized remediation.
+
+Spaced revision.
+
+Voice Tutor.
+
+Voice Viva.
+
+Teacher student search.
+
+Teacher analytics.
+
+CLO analytics.
+
+Study planner.
+
+Mock exam.
+
+Exam readiness.
+
+Mobile UI.
+
+Dark/light mode.
+
+Demo mode.
+
+Tests.
+
+Docker.
+
+README.
+
+==================================================
+PART CK — DELIVERABLES
+==================================================
+
+Final repository must contain:
+
+complete source code
+
+requirements
+
+environment example
+
+database migrations
+
+seed script
+
+demo accounts
+
+sample AI course
+
+tests
+
+documentation
+
+Docker files
+
+architecture diagram
+
+screenshots
+
+demo walkthrough
+
+deployment instructions
+
+known limitations
+
+future roadmap
+
+==================================================
+PART CL — FINAL REPORT
+==================================================
+
+At completion produce:
+
+FINAL_STATUS.md
+
+For every feature show:
+
+Feature
+
+Status
+
+Implementation
+
+External Dependency
+
+Known Limitation
+
+Example:
+
+Live Voice Tutor
+WORKING
+WebSocket + STT + LLM + TTS
+Requires configured voice provider
+Typed fallback available
+
+==================================================
+PART CM — MOST IMPORTANT PRODUCT RULE
+==================================================
+
+Do NOT gradually turn CampusPath into a generic ChatGPT interface.
+
+Its identity is:
+
+COURSE DIGITAL TWIN
++
+STUDENT KNOWLEDGE MODEL
++
+KNOWLEDGE TRACING
++
+PREREQUISITE GRAPH
++
+MISCONCEPTION DETECTION
++
+ADAPTIVE ASSESSMENT
++
+PERSONALIZED REMEDIATION
++
+RAG
++
+LIVE VOICE TUTOR
++
+MULTIMODAL AI
++
+CLO/BLOOM INTELLIGENCE
++
+TEACHER ANALYTICS
++
+EXPLAINABLE AI
++
+SECURE ROLE-BASED ACCESS
+
+==================================================
+FINAL COMMAND
+==================================================
+
+You now own the engineering execution of CampusPath AI.
+
+Start from Phase 0.
+
+Do not ask me to manually choose routine technical decisions that a senior engineer can safely decide.
+
+When several valid implementation approaches exist:
+
+choose the one that gives the best balance of:
+
+reliability
+
+maintainability
+
+performance
+
+security
+
+visual quality
+
+demo reliability
+
+development practicality
+
+Keep Python as the main engineering stack.
+
+Do not reduce the project into a prototype unless a specific external service makes real implementation impossible.
+
+When an external dependency is unavailable:
+
+implement the real interface
+
+provide a provider adapter
+
+provide configuration
+
+provide a realistic demo fallback
+
+and clearly document the limitation.
+
+Continue phase by phase until the repository is a coherent working application.
+
+The final CampusPath AI must be strong enough to demonstrate to:
+
+AI course faculty
+
+university project panel
+
+research internship interviewer
+
+software engineering interviewer
+
+AI/ML internship interviewer
+
+and future collaborators.
+
+The final reviewer should immediately understand:
+
+“This is not an LLM wrapper. This is an adaptive intelligent educational platform.”
+
+BEGIN WITH PHASE 0 NOW.

@@ -1,0 +1,7 @@
+Chapter 2: Reliable Transport
+Section 2.1: TCP service
+TCP provides a reliable, ordered byte stream between endpoints. Sequence numbers identify positions in that byte stream. Acknowledgments report receipt progress, and retransmission mechanisms recover missing data. TCP does not preserve application message boundaries, so applications define their own message framing.
+Section 2.2: Flow and congestion control
+Flow control helps prevent a sender from overwhelming the receiver. Congestion control adjusts sending behavior to network conditions. These mechanisms address different constraints: receiver capacity and congestion in the path. Reliable delivery still depends on connectivity and successful retransmission; a broken connection can eventually be reported as an error.
+Section 2.3: Reasoning example
+If bytes arrive out of order, sequence numbers allow the receiver to place them in order before presenting the ordered stream to the application. If a data segment is lost, acknowledgments and retransmission logic support recovery. Ordered delivery and loss recovery should be explained separately rather than treated as the same operation.

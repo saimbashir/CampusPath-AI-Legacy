@@ -1,7 +1,20 @@
-# CampusPath AI — Public Development Release
+# Public development release notes (v0.5.0)
 
-This repository publishes the CampusPath AI v0.5.0 development build. The application includes student and teacher workflows, question review, viva session variation, and a FastAPI backend.
+CampusPath AI is shared as an **in-development portfolio and research demonstration**, not a production-certified student-assessment system.
 
-**Development software, not yet certified for production use.** Live LLM and speech services require separately configured credentials and verification. Local demo accounts are not suitable for a publicly deployed application.
+## What the release includes
 
-The full application source, tests, setup instructions and supporting documentation are included in the project release.
+- FastAPI application, SQLite/Alembic migrations, HTML/CSS/JavaScript frontend.
+- Practice viva session variations and formal viva teacher-approved question selections.
+- Classroom workflows, access controls, demo material, reproducible tests and setup guides.
+- `.env.example` contains empty provider placeholders; configure real keys privately.
+
+## Important limitations
+
+- Real LLM question generation and automatic semantic evaluation need a configured external provider.
+- Teacher approval is required before formal viva questions are published.
+- Built-in demo accounts and passwords are strictly for local evaluation. Do not deploy demo accounts publicly.
+- Speech and live AI provider interactions require your own end-to-end verification before real use.
+- Replace synthetic course content with materials you are permitted to use.
+
+See [README.md](README.md), [START_HERE.md](START_HERE.md), [SECURITY.md](SECURITY.md), [FINAL_STATUS.md](FINAL_STATUS.md), and [docs/RELEASE_0_5_0.md](docs/RELEASE_0_5_0.md).

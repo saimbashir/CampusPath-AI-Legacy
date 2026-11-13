@@ -1,0 +1,1684 @@
+# CRITICAL CAMPUSPATH REQUIREMENTS — UNIVERSAL COURSE ENGINE + ADVANCED AI VIVA
+
+These requirements are MANDATORY.
+
+They override any earlier implementation that assumes CampusPath is specifically for Artificial Intelligence, A*, BFS, DFS, programming, or any other particular subject.
+
+==================================================
+1. CAMPUSPATH MUST NOT BE HARD-CODED FOR AI COURSE
+==================================================
+
+CampusPath is a GENERAL-PURPOSE adaptive education platform.
+
+Artificial Intelligence and A* are ONLY DEMO DATA.
+
+They must NEVER define the application architecture.
+
+Do NOT hard-code:
+
+- A*
+- BFS
+- DFS
+- Heuristics
+- Minimax
+- Artificial Intelligence terminology
+- predefined AI course structures
+- predefined AI prerequisite relationships
+- AI-specific quiz templates
+
+into the core learning system.
+
+The system must dynamically learn the structure of whatever course/material the teacher provides.
+
+Examples of courses CampusPath should be capable of supporting:
+
+Computer Science
+
+Software Engineering
+
+Artificial Intelligence
+
+Database Systems
+
+Computer Networks
+
+Operating Systems
+
+Data Structures
+
+Algorithms
+
+Programming
+
+Mathematics
+
+Linear Algebra
+
+Calculus
+
+Statistics
+
+Physics
+
+Chemistry
+
+Biology
+
+English
+
+History
+
+Business
+
+Accounting
+
+Economics
+
+Psychology
+
+Engineering
+
+Medical educational material
+
+School subjects
+
+University subjects
+
+Professional certification material
+
+Books
+
+Research notes
+
+Training manuals
+
+and other structured educational material.
+
+The architecture must be SUBJECT-INDEPENDENT.
+
+==================================================
+2. ANY BOOK / COURSE / LEARNING MATERIAL
+==================================================
+
+Teacher should be able to create a course such as:
+
+“Linear Algebra”
+
+and upload:
+
+- textbook
+- lecture slides
+- syllabus
+- notes
+- assignments
+- example problems
+- quizzes
+
+CampusPath should discover concepts such as:
+
+Matrices
+
+Determinants
+
+Vector Spaces
+
+Linear Independence
+
+Eigenvalues
+
+without any of these concepts being hard-coded.
+
+Another teacher can create:
+
+“Computer Networks”
+
+and CampusPath should discover:
+
+OSI Model
+
+TCP/IP
+
+Routing
+
+Switching
+
+Congestion
+
+without code changes.
+
+Another teacher can upload:
+
+“Grade 9 Biology”
+
+and the same system should work.
+
+No developer should have to modify Python code to support a new course.
+
+==================================================
+3. COURSE DIGITAL TWIN MUST BE DYNAMIC
+==================================================
+
+Course Digital Twin generation must operate on uploaded material.
+
+Input:
+
+teacher materials
+
+↓
+
+AI extraction
+
+↓
+
+course structure proposal
+
+The resulting structure should dynamically contain:
+
+Course
+
+Units
+
+Chapters
+
+Topics
+
+Subtopics
+
+Definitions
+
+Concept relationships
+
+Prerequisites
+
+Learning outcomes
+
+Difficulty
+
+Important examples
+
+Formulas where relevant
+
+Key terms
+
+Assessment opportunities
+
+Teacher may review and edit everything.
+
+The structure must be stored in the database rather than embedded in code.
+
+==================================================
+4. BOOK-AWARE LEARNING
+==================================================
+
+Teacher may upload one or more books.
+
+CampusPath should index books by:
+
+Book
+
+Chapter
+
+Section
+
+Page
+
+Topic
+
+Where extraction allows.
+
+Example:
+
+Student asks:
+
+“Explain the concept from Chapter 4, page 82.”
+
+CampusPath should retrieve the appropriate material.
+
+Another query:
+
+“Give me viva questions from Chapters 2 and 3.”
+
+CampusPath should generate questions specifically from those chapters.
+
+==================================================
+5. COURSE MATERIAL IS THE SOURCE OF TRUTH
+==================================================
+
+When teacher selects:
+
+“Use only provided material”
+
+CampusPath must restrict:
+
+Tutor
+
+Quiz
+
+Viva
+
+Mock Exam
+
+Assignments
+
+to teacher-authorized course resources.
+
+The system must not quietly use unrelated external model knowledge.
+
+If the required answer cannot be supported by course materials, say:
+
+“The provided course material does not contain enough information to answer this confidently.”
+
+==================================================
+6. NEVER IMPLEMENT ONLY MY EXAMPLES
+==================================================
+
+Whenever this specification gives an example, interpret it ONLY as an example.
+
+For instance:
+
+A*
+
+BFS
+
+Linear Algebra
+
+Biology
+
+are acceptance-test examples.
+
+Do NOT implement special-case conditions such as:
+
+if topic == "A*"
+
+or:
+
+if course == "Artificial Intelligence"
+
+Core logic must be generic.
+
+==================================================
+7. GENERIC QUESTION GENERATION
+==================================================
+
+Question generation must work from arbitrary educational content.
+
+The system should infer appropriate question types.
+
+Possible question types:
+
+MCQ
+
+True/False
+
+Short Answer
+
+Long Answer
+
+Numerical
+
+Problem Solving
+
+Scenario-Based
+
+Conceptual
+
+Definition
+
+Comparison
+
+Oral Viva
+
+Programming Question
+
+Application Question
+
+Analysis Question
+
+Questions should be grounded in the selected course resources.
+
+==================================================
+8. SUBJECT-AWARE ANSWER EVALUATION
+==================================================
+
+Evaluation should adapt according to question type.
+
+For conceptual questions:
+
+evaluate required concepts.
+
+For numerical problems:
+
+evaluate result and method where possible.
+
+For programming:
+
+evaluate code/rubric safely.
+
+For definitions:
+
+evaluate essential meaning.
+
+For explanations:
+
+evaluate conceptual coverage.
+
+Do NOT apply the same simplistic string comparison to every subject.
+
+==================================================
+9. VIVA IS A CORE CAMPUSPATH FEATURE
+==================================================
+
+The AI Viva system is now one of the highest-priority CampusPath features.
+
+It must be treated as a major subsystem.
+
+The intended experience is:
+
+Teacher selects course material
+
+↓
+
+CampusPath prepares viva
+
+↓
+
+AI asks student a question verbally
+
+↓
+
+Student answers verbally
+
+↓
+
+CampusPath listens
+
+↓
+
+Speech is converted to text
+
+↓
+
+AI evaluates the answer against PROVIDED COURSE MATERIAL
+
+↓
+
+AI identifies:
+
+what is correct
+
+what is incorrect
+
+what is missing
+
+any misconception
+
+↓
+
+AI gives short feedback
+
+↓
+
+AI asks an intelligent follow-up
+
+↓
+
+Conversation continues
+
+↓
+
+Each answer receives marks
+
+↓
+
+Final viva marks are calculated
+
+↓
+
+Teacher can see viva marks and detailed results.
+
+==================================================
+10. VIVA MUST COME FROM PROVIDED MATERIAL
+==================================================
+
+This is CRITICAL.
+
+The AI Viva must generate questions FROM:
+
+teacher-selected material.
+
+Teacher should be able to select:
+
+Entire course
+
+Selected unit
+
+Selected chapter
+
+Selected lecture
+
+Selected book chapters
+
+Selected topics
+
+Selected uploaded documents
+
+Example:
+
+Teacher uploads:
+
+Computer Networks Book
+
+Lecture 1
+
+Lecture 2
+
+Lecture 3
+
+Then selects:
+
+“Create viva from Lecture 1–3.”
+
+Viva questions must be based on those lectures.
+
+Another teacher may select:
+
+Linear Algebra
+Chapter 4
+
+The same Viva engine must work without code changes.
+
+==================================================
+11. VIVA CREATION SCREEN
+==================================================
+
+Teacher should have a professional:
+
+CREATE VIVA
+
+screen.
+
+Teacher configures:
+
+Course
+
+Section
+
+Material scope
+
+Topics
+
+Number of questions
+
+Total marks
+
+Marks per question
+
+Difficulty
+
+Time limit
+
+Viva availability
+
+Optional start/end date
+
+Question distribution
+
+Bloom levels if desired
+
+Follow-up depth
+
+Feedback policy
+
+Teacher review requirement
+
+==================================================
+12. VIVA MATERIAL SCOPE
+==================================================
+
+Teacher can choose:
+
+All course material
+
+Specific lectures
+
+Specific chapters
+
+Specific files
+
+Specific topics
+
+Specific CLOs
+
+or combinations.
+
+Store the selected scope permanently with the viva.
+
+This is necessary so the system can later prove which source material a question came from.
+
+==================================================
+13. AI VIVA QUESTION GENERATION
+==================================================
+
+Each viva question must contain structured metadata:
+
+question_text
+
+course_id
+
+topic_id
+
+source_resource_ids
+
+source_locations
+
+difficulty
+
+marks
+
+expected_concepts
+
+acceptable_answer_points
+
+possible_misconceptions
+
+follow_up_strategy
+
+CLO where applicable
+
+Bloom level where applicable
+
+The AI must not generate unsupported questions.
+
+==================================================
+14. TEACHER VIVA QUESTION REVIEW
+==================================================
+
+Teacher should optionally review viva questions before publishing.
+
+Teacher can:
+
+Approve
+
+Edit
+
+Reject
+
+Regenerate
+
+Change marks
+
+Change difficulty
+
+Add own manual question
+
+This should be configurable.
+
+==================================================
+15. STUDENT VIVA EXPERIENCE
+==================================================
+
+Student enters:
+
+VIVA SESSION
+
+Screen shows:
+
+Course
+
+Viva title
+
+Question number
+
+Total marks
+
+Current topic if allowed
+
+Timer
+
+AI voice/avatar
+
+Microphone state
+
+Transcript
+
+Student should hear:
+
+Question 1.
+
+Then answer naturally by microphone.
+
+==================================================
+16. AI MUST LISTEN TO STUDENT
+==================================================
+
+Student response:
+
+voice audio
+
+↓
+
+Voice Activity Detection
+
+↓
+
+Speech-to-Text
+
+↓
+
+editable transcript
+
+The transcript must be shown before final submission when appropriate.
+
+Technical vocabulary may be recognized incorrectly, so student should be able to correct transcription without changing the actual meaning unfairly.
+
+==================================================
+17. VIVA ANSWER EVALUATION
+==================================================
+
+The answer evaluation must NOT be:
+
+exact text matching.
+
+Use:
+
+question
+
+expected concepts
+
+teacher/course material
+
+rubric
+
+student answer
+
+to produce a structured evaluation.
+
+Return:
+
+Correctness category
+
+Correct points
+
+Incorrect points
+
+Missing points
+
+Misconceptions
+
+Evidence
+
+Confidence
+
+Marks obtained
+
+Suggested follow-up
+
+==================================================
+18. VIVA FEEDBACK TO STUDENT
+==================================================
+
+After an answer, CampusPath can say:
+
+“Your explanation of X is correct.”
+
+“You correctly mentioned A and B.”
+
+“However, you missed C.”
+
+“The statement about D is incorrect because…”
+
+Feedback should be concise during the viva so the session keeps moving.
+
+Teacher should be able to configure:
+
+Immediate feedback ON
+
+or
+
+Immediate feedback OFF
+
+For formal examination mode, feedback may be delayed until the end.
+
+==================================================
+19. VIVA FOLLOW-UP QUESTIONS
+==================================================
+
+Viva should feel like a real oral examination.
+
+Do NOT simply ask five unrelated questions.
+
+Follow-ups should depend on the student's previous answer.
+
+Example structure:
+
+Main Question
+
+↓
+
+Student partially correct
+
+↓
+
+Clarification question
+
+↓
+
+Student improves
+
+↓
+
+Deeper question
+
+or
+
+Main Question
+
+↓
+
+Student incorrect
+
+↓
+
+Prerequisite probe
+
+Follow-up should stay within the selected course-material scope.
+
+==================================================
+20. VIVA MARKING
+==================================================
+
+Each question has marks.
+
+Example:
+
+Question 1:
+5 marks
+
+Student receives:
+
+3.5 / 5
+
+Evaluation:
+
+Correct:
+
+2 important concepts
+
+Missing:
+
+1 concept
+
+Incorrect:
+
+1 claim
+
+Then:
+
+Question 2:
+5 marks
+
+At the end:
+
+Total:
+
+17 / 25
+
+Percentage:
+
+68%
+
+Store all calculations.
+
+==================================================
+21. VIVA RUBRIC
+==================================================
+
+Allow teacher to define rubric.
+
+Possible criteria:
+
+Conceptual Correctness
+
+Completeness
+
+Application
+
+Reasoning
+
+Use of Terminology
+
+Example/Justification
+
+Default rubric can be generated based on course/question type.
+
+Teacher may edit weights.
+
+==================================================
+22. AI MARKS SHOULD BE EXPLAINABLE
+==================================================
+
+Never output:
+
+7/10
+
+without explanation.
+
+Store:
+
+Marks:
+
+7/10
+
+Reason:
+
++4 correct core concept
+
++2 valid explanation
+
++1 example
+
+-2 missing relationship
+
+-1 incorrect statement
+
+Exact scoring implementation can vary, but scoring rationale must be reconstructable.
+
+==================================================
+23. TEACHER REVIEW OF VIVA MARKS
+==================================================
+
+Teacher should have:
+
+VIVA REVIEW
+
+screen.
+
+Show:
+
+Student Name
+
+University ID
+
+Course
+
+Viva
+
+Date
+
+Total AI-Proposed Marks
+
+Teacher-Confirmed Marks
+
+Status
+
+Teacher clicks student.
+
+Then sees:
+
+Question 1
+
+Audio transcript
+
+Expected concepts
+
+Student answer
+
+Correct points
+
+Wrong points
+
+Missing points
+
+AI score
+
+Confidence
+
+Teacher score
+
+Teacher notes
+
+Teacher may:
+
+Confirm AI score
+
+Change marks
+
+Add feedback
+
+Flag evaluation
+
+==================================================
+24. OFFICIAL VIVA MARKS
+==================================================
+
+For formal assessment, default behavior should be:
+
+AI PROPOSES MARKS
+
+↓
+
+TEACHER REVIEWS
+
+↓
+
+TEACHER CONFIRMS
+
+↓
+
+OFFICIAL MARKS
+
+This is safer academically.
+
+Allow optional:
+
+AUTO-FINALIZE
+
+only when institution/teacher explicitly enables it.
+
+For university demo:
+
+keep teacher-confirmation enabled.
+
+==================================================
+25. TEACHER DASHBOARD VIVA MARKS
+==================================================
+
+Teacher Student Directory should include:
+
+Viva Average
+
+Example:
+
+Name:
+Saim Bashir
+
+University ID:
+23F-1234
+
+Quiz:
+81%
+
+Assignment:
+78%
+
+Viva:
+74%
+
+Mastery:
+76%
+
+Teacher can sort by:
+
+Viva Average
+
+==================================================
+26. STUDENT VIVA HISTORY
+==================================================
+
+Student sees only their own:
+
+Viva title
+
+Date
+
+Score
+
+Teacher-confirmed score
+
+Question-level feedback
+
+Concept weaknesses
+
+Teacher comments
+
+Do not expose other students' viva results.
+
+==================================================
+27. VIVA ANALYTICS
+==================================================
+
+Teacher should see class viva analytics.
+
+Examples:
+
+Class Viva Average
+
+Highest Viva Score
+
+Average by Topic
+
+Common Missing Concepts
+
+Common Misconceptions
+
+Question Difficulty Performance
+
+Students Needing Viva Support
+
+CLO Viva Performance
+
+==================================================
+28. VIVA MASTERY INTEGRATION
+==================================================
+
+Teacher-confirmed viva results can update the Student Knowledge Model.
+
+Example:
+
+Before:
+
+Topic mastery:
+54%
+
+Student demonstrates strong oral understanding.
+
+Confirmed Viva:
+
+8/10
+
+Mastery may increase according to evidence weight.
+
+Do NOT treat one viva as absolute mastery.
+
+Use calibrated evidence weighting.
+
+==================================================
+29. VIVA QUESTION SOURCE EVIDENCE
+==================================================
+
+Teacher should be able to inspect:
+
+Question generated from:
+
+Book:
+Computer Networks
+
+Chapter:
+3
+
+Page:
+81
+
+or:
+
+Lecture_05.pdf
+
+Slide:
+14
+
+This improves trust.
+
+==================================================
+30. VIVA HALLUCINATION PROTECTION
+==================================================
+
+Before asking a generated viva question:
+
+verify it is supported by selected material.
+
+Question generation flow:
+
+Generate
+
+↓
+
+Retrieve supporting evidence
+
+↓
+
+Validate
+
+↓
+
+Accept/reject
+
+Only supported questions are used.
+
+==================================================
+31. VIVA SESSION CONTEXT
+==================================================
+
+AI must remember the entire current viva conversation.
+
+Example:
+
+AI:
+“Define normalization.”
+
+Student answer.
+
+AI:
+“Earlier you said redundancy is removed completely. Is that always true?”
+
+This follow-up requires previous-turn context.
+
+Maintain structured viva session state.
+
+==================================================
+32. VIVA INTERRUPTION CONTROL
+==================================================
+
+For stable initial implementation:
+
+AI finishes speaking
+
+↓
+
+student microphone activates
+
+↓
+
+student answers
+
+↓
+
+VAD detects silence
+
+↓
+
+student may press Finish Answer
+
+↓
+
+evaluation
+
+↓
+
+AI speaks feedback/follow-up
+
+This is preferable to chaotic full-duplex behavior.
+
+==================================================
+33. VIVA LIVE STATES
+==================================================
+
+UI should visibly show:
+
+AI SPEAKING
+
+YOUR TURN
+
+LISTENING
+
+PROCESSING ANSWER
+
+EVALUATING
+
+FOLLOW-UP READY
+
+This makes the experience professional.
+
+==================================================
+34. VIVA FAILURE FALLBACK
+==================================================
+
+If microphone fails:
+
+allow typed answer.
+
+If STT fails:
+
+allow transcript correction/manual answer.
+
+If TTS fails:
+
+display question text.
+
+If LLM unavailable:
+
+Demo mode can run seeded viva questions.
+
+Never make viva unusable because one provider fails.
+
+==================================================
+35. VIVA PRIVACY
+==================================================
+
+Raw audio storage must be OFF by default.
+
+Persist:
+
+transcript
+
+evaluation
+
+marks
+
+question
+
+teacher review
+
+timestamps
+
+If raw recording is enabled:
+
+require clear consent and configuration.
+
+==================================================
+36. VIVA DATABASE DESIGN
+==================================================
+
+Ensure entities include:
+
+Viva
+
+VivaMaterialScope
+
+VivaQuestion
+
+VivaSession
+
+VivaResponse
+
+VivaEvaluation
+
+VivaTeacherReview
+
+Fields should support:
+
+student
+
+teacher
+
+course
+
+section
+
+resources
+
+topics
+
+question marks
+
+AI proposed marks
+
+teacher confirmed marks
+
+feedback
+
+transcript
+
+confidence
+
+timestamps
+
+==================================================
+37. VIVA STATUS
+==================================================
+
+Example lifecycle:
+
+DRAFT
+
+PUBLISHED
+
+AVAILABLE
+
+IN_PROGRESS
+
+SUBMITTED
+
+AI_EVALUATED
+
+TEACHER_REVIEW_REQUIRED
+
+FINALIZED
+
+==================================================
+38. VIVA SECURITY
+==================================================
+
+Student can access only their assigned viva.
+
+Student cannot:
+
+change marks
+
+read expected answers
+
+read hidden rubric
+
+access another student's viva
+
+Teacher can review only students from assigned courses.
+
+Protect all via backend authorization.
+
+==================================================
+39. VIVA ACCEPTANCE TEST — COURSE GENERALITY
+==================================================
+
+Do not test Viva only with Artificial Intelligence.
+
+Create at least three automatic test courses.
+
+TEST COURSE A:
+
+Artificial Intelligence
+
+Question from uploaded AI material.
+
+TEST COURSE B:
+
+Linear Algebra
+
+Upload content explaining determinants.
+
+Viva asks:
+
+“What does the determinant tell us about matrix invertibility?”
+
+Evaluate answer from the uploaded material.
+
+TEST COURSE C:
+
+Computer Networks
+
+Upload material on TCP.
+
+Generate and evaluate relevant viva.
+
+All three must use the SAME codebase with no subject-specific conditional logic.
+
+==================================================
+40. UNIVERSAL COURSE ACCEPTANCE TEST
+==================================================
+
+Create a new course at runtime:
+
+“Environmental Science”
+
+Upload a short teacher-created document.
+
+Without modifying application code:
+
+CampusPath must:
+
+extract topics
+
+index content
+
+allow tutoring
+
+generate quiz
+
+generate viva
+
+evaluate answer
+
+produce teacher analytics.
+
+If this requires Python source changes:
+
+the architecture is not sufficiently generic.
+
+==================================================
+41. DO NOT CONFUSE DEMO DATA WITH PRODUCT LOGIC
+==================================================
+
+AI demo seed:
+
+Artificial Intelligence
+
+may stay.
+
+But all application services must operate on database/configuration content.
+
+No core service should assume:
+
+course title
+
+topic names
+
+chapter names
+
+question text
+
+expected concepts
+
+before materials are provided.
+
+==================================================
+42. UPDATED FINAL CAMPUSPATH IDENTITY
+==================================================
+
+CampusPath should now be understood as:
+
+A UNIVERSAL AI LEARNING PLATFORM
+
+where a teacher can upload essentially any academic course/book/material and CampusPath creates:
+
+course understanding
+
+searchable knowledge
+
+AI tutoring
+
+adaptive questions
+
+voice viva
+
+student mastery
+
+teacher analytics
+
+from that content.
+
+Its identity is NOT:
+
+“AI Course Tutor.”
+
+Its identity is:
+
+“An adaptive AI education platform for arbitrary teacher-provided curricula.”
+
+==================================================
+43. FINAL VIVA DEMONSTRATION
+==================================================
+
+Prepare this exact workflow for final demo.
+
+Teacher logs in.
+
+Teacher creates:
+
+Computer Networks
+
+Teacher uploads:
+
+CN_Lecture_01.pdf
+
+CN_Lecture_02.pdf
+
+Teacher opens:
+
+Create Viva
+
+Selects:
+
+Lecture 1–2
+
+Questions:
+5
+
+Marks:
+25
+
+Difficulty:
+Mixed
+
+Teacher generates viva.
+
+AI produces grounded questions.
+
+Teacher reviews and publishes.
+
+Student:
+
+Saim Bashir
+23F-1234
+
+logs in.
+
+Student sees:
+
+Computer Networks Viva
+
+Starts viva.
+
+AI speaks:
+
+“Explain the role of a switch in a LAN.”
+
+Student answers verbally.
+
+AI listens.
+
+Transcript appears.
+
+AI evaluates:
+
+Correct:
+
+Switch forwards frames.
+
+Switch uses MAC addresses.
+
+Missing:
+
+MAC address table learning process.
+
+AI proposed score:
+
+4 / 5
+
+AI asks follow-up:
+
+“How does the switch learn which MAC address belongs to each port?”
+
+Student answers.
+
+Session continues.
+
+At end:
+
+AI Proposed:
+
+20 / 25
+
+Student sees:
+
+Pending Teacher Review.
+
+Teacher logs in.
+
+Teacher opens:
+
+Viva Review
+
+Searches:
+
+23F-1234
+
+Teacher sees each question.
+
+Teacher reads transcript.
+
+Teacher sees:
+
+correct points
+
+wrong points
+
+missing points
+
+AI proposed marks
+
+Teacher confirms or edits.
+
+Final score:
+
+21 / 25
+
+Student receives notification:
+
+“Computer Networks Viva graded: 21/25.”
+
+Student Progress updates.
+
+Teacher Student Directory now shows:
+
+Viva Average:
+84%
+
+This workflow must work regardless of whether the course is:
+
+Computer Networks
+
+AI
+
+Mathematics
+
+Physics
+
+Biology
+
+or another uploaded curriculum.
+
+==================================================
+44. HIGHEST PRIORITY
+==================================================
+
+Treat these three requirements as top priority:
+
+1. CAMPUSPATH MUST SUPPORT ARBITRARY COURSES AND BOOKS.
+
+2. VIVA QUESTIONS MUST BE GENERATED FROM TEACHER-PROVIDED MATERIAL.
+
+3. STUDENT SPOKEN ANSWERS MUST BE LISTENED TO, EVALUATED, EXPLAINED, MARKED, AND MADE AVAILABLE TO THE AUTHORIZED TEACHER.
+
+Do not declare the remaining CampusPath work complete until these three requirements are implemented and tested.
+
+==================================================
+FINAL INSTRUCTION
+==================================================
+
+Do NOT implement only the examples written in this prompt.
+
+Every example exists to clarify behavior.
+
+The actual implementation must derive:
+
+course
+
+topics
+
+questions
+
+answers
+
+rubrics
+
+viva
+
+assessment
+
+analytics
+
+from the teacher's actual uploaded material.
+
+Prove generality with multiple unrelated courses.
+
+Continue development on the EXISTING repository.
+
+Preserve all currently passing functionality and tests.
+
+Add new tests.
+
+Update FINAL_STATUS.md honestly.
+
+Do not claim Viva is fully working until a complete:
+
+material → question → spoken answer → transcription → evaluation → marks → teacher review → finalized grade
+
+workflow has been successfully tested.

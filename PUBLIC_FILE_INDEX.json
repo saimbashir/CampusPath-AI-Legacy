@@ -1,0 +1,486 @@
+{
+  ".dockerignore": {
+    "bytes": 99,
+    "sha256": "7997ac4e35e8d4e0b6a96433dbd0f51bb5b49c55081148b99f248b23649b140f"
+  },
+  "ARCHITECTURE.md": {
+    "bytes": 1031,
+    "sha256": "6384aae11c529f708aaa80847fee9822c7462d2c2d7a9a3ab5bf2a1194122c03"
+  },
+  ".gitignore": {
+    "bytes": 105,
+    "sha256": "c054eab1ab05df874d045c8699efc910c700cc82c080bde54e5eb4a61dd307b3"
+  },
+  "START.bat": {
+    "bytes": 249,
+    "sha256": "9cf080b8e51b8e5976c9f882e7f4af093ae109d90723fdc67819833042480ad2"
+  },
+  "SECURITY.md": {
+    "bytes": 1118,
+    "sha256": "faae52eb0c1d90123e5b191f0b9c4bbd8b952cbfbe3fac1d37e4eafeadec93c1"
+  },
+  "TASKS.md": {
+    "bytes": 3026,
+    "sha256": "f06032c17071e668a4498bbfaa8203d194a3cad0e2dd832dd5102acddf08c183"
+  },
+  "docker-compose.yml": {
+    "bytes": 168,
+    "sha256": "b92f39d8a4e51888d55e522eb04196f62a432b338860a19842ab17b064a3ace3"
+  },
+  "requirements.lock.txt": {
+    "bytes": 776,
+    "sha256": "658e6e919df2329c0413ac2de8b9cba5b0f6af5668947cfd52a46751c634b294"
+  },
+  "requirements.txt": {
+    "bytes": 272,
+    "sha256": "ce9b9f919c3910f27a3b8f39cf58b66186af1bf0c6834c23c9e0743d3740756a"
+  },
+  "alembic.ini": {
+    "bytes": 69,
+    "sha256": "024bf3fe092ea4f8e6bb6309cba89e67b53bada366dee6859339297f090fdda1"
+  },
+  "FINAL_STATUS.md": {
+    "bytes": 9091,
+    "sha256": "7c3207fc07d80dffbbf0704e88e2af260b85e1c6419d471cb9133c5dbb28dbfa"
+  },
+  "START_HERE.md": {
+    "bytes": 4487,
+    "sha256": "5a9ae9c2b52400ac7674fefceb100f6059ab8ee5a0188f30c40b3ab51db160d7"
+  },
+  ".env.example": {
+    "bytes": 728,
+    "sha256": "5c576645e64004092176b5c37b5706b2461642461c378c2bfb6267d30403facb"
+  },
+  "start.sh": {
+    "bytes": 187,
+    "sha256": "11cd9927639b41e62fd45fdc824884fb1f1f5ca026be1312ade6d5c420007250"
+  },
+  "DATABASE_PLAN.md": {
+    "bytes": 1006,
+    "sha256": "922a93005a770b01c32409cfb09c4c46ecf0ffc571872a3a3a98ea416c9429a7"
+  },
+  "README.md": {
+    "bytes": 15403,
+    "sha256": "8a7af9b6093cd679bf58c876e1f43c6394ddd157721125a944a1b4d9e1fdd1db"
+  },
+  "Dockerfile": {
+    "bytes": 389,
+    "sha256": "6e6b747093285d29b093ac64bdd40ec03bd328904dd6915bed6678c64733f3ed"
+  },
+  "PROJECT_PLAN.md": {
+    "bytes": 1116,
+    "sha256": "f346d44e9ae46eed95b6aea630638f7bc8e3745feb7ff1023683b18ea38c4edc"
+  },
+  "run.py": {
+    "bytes": 5018,
+    "sha256": "9669436b2f2e4a4836df502999a8607cd4738d52df5e21039393a04d926832fa"
+  },
+  "scripts/reindex_vectors.py": {
+    "bytes": 518,
+    "sha256": "4c0bcfc1bcc66c22c0a3f2822f0d096ba4438359e5efb338e5f27370677e1d05"
+  },
+  "scripts/seed_demo.py": {
+    "bytes": 4684,
+    "sha256": "0fd504f3f48a999a6f74fa24081df21839c87b17c00b8cef7d47a1c2b7c3699c"
+  },
+  "scripts/evaluate_retrieval.py": {
+    "bytes": 1674,
+    "sha256": "d906127d537255f1598b8da4171d5f760ecdfb031d64a2ea3b06070de0ef1b2d"
+  },
+  "scripts/bootstrap.py": {
+    "bytes": 1039,
+    "sha256": "06d02e8b6df41e0a4f99ea0a5a44de07d8b2ad9b7f6f2a61d4a8693494f4261c"
+  },
+  "scripts/manage.py": {
+    "bytes": 2098,
+    "sha256": "d07afb45b85ab61f170cf2b8591e0b8048218a0d97452c051a31fea676adf892"
+  },
+  "app/config.py": {
+    "bytes": 604,
+    "sha256": "0efa08bbd94d963d51dce0828595637254ec721155c4e4afe7e5897938c24a58"
+  },
+  "app/main.py": {
+    "bytes": 4292,
+    "sha256": "964dcc861968d6b6b012c612e345ba8fa9e3a72a3f11d1747a15bf019c4d8ceb"
+  },
+  "app/db.py": {
+    "bytes": 714,
+    "sha256": "9b2f512e626b22aa1b9ee87c66816095be933b35f437e40d0313f3ee731e2e84"
+  },
+  "app/__init__.py": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "app/schemas.py": {
+    "bytes": 6377,
+    "sha256": "1e3b22a4d47f3adf7a96a71d774c141784db1cb248dc22abd1883ac0b28158c0"
+  },
+  "app/http_limits.py": {
+    "bytes": 1122,
+    "sha256": "689bc91ed2a6d9cba24214f5a24f3d2500c32368d7b7f11f86063f3888fac308"
+  },
+  "app/models.py": {
+    "bytes": 15577,
+    "sha256": "fda5a6595f2785652827d5f9650b7d72c0ccfdfb76c5a4b806d60da9b9bfef34"
+  },
+  "migrations/env.py": {
+    "bytes": 297,
+    "sha256": "0963cd55d3fb707f33e4c1c99a1bf06df8e76ab15b313d5e65726810520108fe"
+  },
+  "migrations/schema_v3.py": {
+    "bytes": 15653,
+    "sha256": "f046ffca63674495b1eccc905dd6778047f488d208af1597a3423b78841de9cb"
+  },
+  "migrations/schema_v2.py": {
+    "bytes": 12488,
+    "sha256": "d9ab0f8009aa54a7baf4c1679078d4824d2aa90fe15d3fc0546423682664b40d"
+  },
+  "migrations/__init__.py": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "migrations/schema_v1.py": {
+    "bytes": 8360,
+    "sha256": "04ae2060cd413fc85569d214605739c5de294c0a7ab7d84050d5bd4a0ff12d61"
+  },
+  "sample_data/Lecture_6.pptx": {
+    "bytes": 44546,
+    "sha256": "ba75cc576f997d2064dc8e8e7ff778e2fddd28b5768dd10371e15f6b5cd04e36"
+  },
+  "sample_data/legacy_viva.py": {
+    "bytes": 1208,
+    "sha256": "b2d698b3adeb062593fbfeb1193c369244e2dcd4272b239f6df0004716f9ab3c"
+  },
+  "sample_data/expanded_bank.py": {
+    "bytes": 9044,
+    "sha256": "c37d4bbc20d6ab0eb63ac6a9ae8b235f03fde7be1f1e012f38088e299ebf18b5"
+  },
+  "sample_data/course.py": {
+    "bytes": 6374,
+    "sha256": "c2de743043ec4b7f9fb6d78018dda5c8271f081288787650df5c9f9dca516815"
+  },
+  "docs/retrieval_benchmark.json": {
+    "bytes": 826,
+    "sha256": "08c0772ff9904caa7c0badbc34105d2e62d6edd0279be1a4ef7aba8284143223"
+  },
+  "docs/knowledge_tracing.md": {
+    "bytes": 3489,
+    "sha256": "1c8c189c7f3f036faee1e3ef75ed97b743d9671c4b44f2a47205eda5bb3fa036"
+  },
+  "docs/architecture.md": {
+    "bytes": 3423,
+    "sha256": "69e096ccfaa696ac1f7a37b4ca15edd3163ed90396f2247a56117ce92173cad3"
+  },
+  "docs/RELEASE_0_5_0.md": {
+    "bytes": 4846,
+    "sha256": "70353aa0d140b1a4fb5ad11901bdf3bd92ba89d74391d280b0c3350781dd2f59"
+  },
+  "docs/authentication.md": {
+    "bytes": 1322,
+    "sha256": "48a2ea1aadf6257d01ae591f165f435608b564ca16b547bcb93c52b72038989b"
+  },
+  "docs/demo_script.md": {
+    "bytes": 3107,
+    "sha256": "716f89884abfedbecd38fe1e83bd4e6e2d26106c47e3fed8c2d89f9cd17ee058"
+  },
+  "docs/ORIGINAL_BRIEF.txt": {
+    "bytes": 49355,
+    "sha256": "9102abd1d9473be0954ae9fd1f4c812aa56a5f7da719f0668c23bd21bf5abe23"
+  },
+  "docs/deployment.md": {
+    "bytes": 2727,
+    "sha256": "24358861e8bdd9e077408d804d30c5cc549c64b166860b54d38a2f2fa074e300"
+  },
+  "docs/UNIVERSAL_VIVA_DEMO.md": {
+    "bytes": 6129,
+    "sha256": "aaddc4a2cf2bee310059244870303f08e42f1bf130dbab886df65920a855f5b6"
+  },
+  "docs/verification.md": {
+    "bytes": 7815,
+    "sha256": "1bdffe10b2261f53f679e54bb34d1127f50844f8c8e126431dc919860980403c"
+  },
+  "docs/voice_ai.md": {
+    "bytes": 3817,
+    "sha256": "050fe76a45c21ba31750a6df623a989b1b4c44e1d7da4b0bc4ead6334b116345"
+  },
+  "docs/UNIVERSAL_VIVA_REQUIREMENTS.txt": {
+    "bytes": 25407,
+    "sha256": "7b6fd190745913c68252c58306f350143c5971e454d8c8c0894697b0b22d7399"
+  },
+  "docs/RELEASE_0_4_1.md": {
+    "bytes": 1174,
+    "sha256": "5ddf7b6e038171007a5f108640b6f49ebea7ba7d83875348885b248c13cb8032"
+  },
+  "docs/rag.md": {
+    "bytes": 1930,
+    "sha256": "8251ff6677a854ec37fa99a651eb56dada76a6294deb91d462b0b6d1ac7d8636"
+  },
+  "docs/security.md": {
+    "bytes": 3825,
+    "sha256": "697366c0e1e34d93f979813601a5dffb59593d00f39b7fc9a1c796218ed4a3bb"
+  },
+  "docs/ai_pipeline.md": {
+    "bytes": 2980,
+    "sha256": "60952eb19ac9c5a767bb13afd52dae13fd0ab5f83a46f1e7c7d777186ad097ef"
+  },
+  "tests/test_learning.py": {
+    "bytes": 8202,
+    "sha256": "9e9f5f00b0c437fb7f0ff87ae099d8577e3f6330e97548a386790783efbbfeda"
+  },
+  "tests/test_startup.py": {
+    "bytes": 2797,
+    "sha256": "1b577db9c43ef284457a5e53b1ea4474a578ffee35ce2e463b2c4f3121261712"
+  },
+  "tests/test_release04.py": {
+    "bytes": 5378,
+    "sha256": "1054446c9a9035506433d52f5fae4de35006e8c45bad9be7fb96540b5051b240"
+  },
+  "tests/test_universal_viva.py": {
+    "bytes": 21117,
+    "sha256": "708fd923d80e5ec6e7e99cc69227146ff9eb443f616d7bfe77032c4b2d95773d"
+  },
+  "tests/conftest.py": {
+    "bytes": 1687,
+    "sha256": "9a7ac7bb387c6d827604e00cbb50d3f0315d0b201c9302496e09dbe5c6a00061"
+  },
+  "tests/__init__.py": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "tests/test_viva_variation.py": {
+    "bytes": 3971,
+    "sha256": "74651d9e7f8e6d2994a6f0c2a287fe4728765522ea0952e3421d406c05a1e4c1"
+  },
+  "tests/test_security.py": {
+    "bytes": 6090,
+    "sha256": "d759b0f85ae8dce3bd3753a64b0e9810c775c013d97f96fab6e3415381e1041f"
+  },
+  "tests/test_workflows.py": {
+    "bytes": 17906,
+    "sha256": "06eafbf07b28ebb3d039606d19c37105954b8b04c843140efb94eea362faabc4"
+  },
+  "tests/test_providers.py": {
+    "bytes": 5669,
+    "sha256": "c12d107b6849a4bfb3917b58aab60a859700a2fd10c9218b40b6d3a9fc6ad722"
+  },
+  "tests/ui/export_fixtures.py": {
+    "bytes": 1170,
+    "sha256": "88072d0a3012c658b6c05049596072be214569712afc0f55d603a46a2f0a8c10"
+  },
+  "tests/ui/voice-check.cjs": {
+    "bytes": 1479,
+    "sha256": "6d21f6a2f067cdc84bb9efac653acd39e93dbb0c6e64193f89cc1abffac6f800"
+  },
+  "tests/ui/integration.cjs": {
+    "bytes": 10784,
+    "sha256": "9595287806a137d6c13840deea6cafb7270354f6870a2fa2719e06b7f97aab09"
+  },
+  "tests/ui/api_bridge.py": {
+    "bytes": 1328,
+    "sha256": "23f30948dd140bf9ea0131f30c010b0440904ced55d5b33f4f4528c348feb636"
+  },
+  "tests/ui/dom-check.cjs": {
+    "bytes": 2612,
+    "sha256": "dd466139f458083a020163910c12748633a79502ae476c33c3150d033101465f"
+  },
+  "tests/ui/package.json": {
+    "bytes": 123,
+    "sha256": "be0e9d40c54ca64e74572dd1aaed8f0317ea4c588f657a3464e40730781d9c30"
+  },
+  "sample_data/universal/CN_Lecture_02.txt": {
+    "bytes": 1154,
+    "sha256": "9d3084e0022ff91e3c0f5a62d20d0856c2aa0838f595f3fb4a1492024de2cc6f"
+  },
+  "sample_data/universal/CN_Lecture_02.pdf": {
+    "bytes": 44440,
+    "sha256": "35ac3d14faa5ddae0cf1518a45909bbf54a31d8afef9ebf7530e067e46af5c0c"
+  },
+  "sample_data/universal/CN_Lecture_01.txt": {
+    "bytes": 1290,
+    "sha256": "891d1e6854e3bfccc7063b59f8b294be600c48918c707e31bffb05326786e8d9"
+  },
+  "sample_data/universal/CN_Lecture_01.pdf": {
+    "bytes": 44457,
+    "sha256": "f185ca29ce054786703319d6fd03577f0d3a3b9721a49e89a9653cf31b93ac15"
+  },
+  ".github/workflows/tests.yml": {
+    "bytes": 642,
+    "sha256": "6aa93b1fc9a4dd68ef8eb9e0b23405cdc9bb974877165620a50591e0cec6659c"
+  },
+  "migrations/versions/0001_initial.py": {
+    "bytes": 385,
+    "sha256": "4fddcdabce8fa7af4927214dd02df6f0d5851cbb42c1987cd8a2a7217b0c06c6"
+  },
+  "migrations/versions/0002_workflows.py": {
+    "bytes": 1957,
+    "sha256": "c64cb95ee3351d9e0760a7003800778aba6490c6e584b8a86f169f2f74ce108a"
+  },
+  "migrations/versions/0003_universal_viva.py": {
+    "bytes": 1283,
+    "sha256": "b6c01b892dcbf531eb4c549fd056a1d4b6aac1196ce6143bf3a524ab9ceb4c37"
+  },
+  "app/assessment/results.py": {
+    "bytes": 1656,
+    "sha256": "c278f612f51dc406d36a775b1107e92999a46600da98e7caf9ca7dc448f68c7c"
+  },
+  "app/assessment/selection.py": {
+    "bytes": 2914,
+    "sha256": "6715d900e460fc3109360f3670f8d3d9d2dfbc46c34ff378e73e9e85ed904797"
+  },
+  "app/assessment/feedback.py": {
+    "bytes": 1079,
+    "sha256": "44425e78a6750d982d90b2edff91f2407a2c67247f30107e14554353f1a185f4"
+  },
+  "app/documents/extract.py": {
+    "bytes": 3031,
+    "sha256": "950eb11050e4bee7283bd89162fcae368f068483a1c11bd221fbacd94d5c56fd"
+  },
+  "app/documents/multimodal.py": {
+    "bytes": 2473,
+    "sha256": "2f72f198fedc379bbb6aeae4552dd37e5578947f5be54c2a51e58937bb7dc72c"
+  },
+  "app/auth/security.py": {
+    "bytes": 3766,
+    "sha256": "81da7fe5f9cb0924c125c3b0fa9c1e8cbd97a41d3fb3baffef96f997c9003db9"
+  },
+  "app/knowledge_graph/engine.py": {
+    "bytes": 2596,
+    "sha256": "3bfd7db1d9a2ff438c3eb0552ca4de81450bdbdfa9ac5e4ca90a4506772a6459"
+  },
+  "app/mastery/engine.py": {
+    "bytes": 1041,
+    "sha256": "337ebb5ad95d87d57ecdc0200770789c2a5da76b4a7ee1f496110ac047a09fdb"
+  },
+  "app/static/style.css": {
+    "bytes": 21555,
+    "sha256": "39da96e2651d0adc4184b06524a83ee7f76f7d02327361a09846ed097c82909b"
+  },
+  "app/static/app.js": {
+    "bytes": 60746,
+    "sha256": "e8eddf40640a921c13308bba78794f038c21e57b9aee76eeef35e43818662772"
+  },
+  "app/static/workflows.js": {
+    "bytes": 32236,
+    "sha256": "4eadc4bc5851f98bd45f77b8c83506b28cafb5cedc0a74a03ac859f95c8d69a4"
+  },
+  "app/static/refresh.css": {
+    "bytes": 8660,
+    "sha256": "5c6f348bc570b60080764af9206b3bf4e77e0099f80ae91739252972108f0ed3"
+  },
+  "app/static/universal.js": {
+    "bytes": 30467,
+    "sha256": "176d6356a9c71df8d7be26970c58330ba9129b06eaa09285bbe398fba5b80fb2"
+  },
+  "app/services/learning.py": {
+    "bytes": 9035,
+    "sha256": "74ee6ac76a103b39c3045d118b6471a88b17dfd963e34341883557eb5210585b"
+  },
+  "app/services/readiness.py": {
+    "bytes": 2414,
+    "sha256": "e97e1860dd3533f5290bae924e08eee84d39846412438076a39a7566879bdf1d"
+  },
+  "app/services/notifications.py": {
+    "bytes": 2734,
+    "sha256": "e9a551da0aa05775c66d470ae60ccfc0fa288abedb078f56543a2ba70f294d41"
+  },
+  "app/services/planning.py": {
+    "bytes": 3987,
+    "sha256": "2285ba813919a04c71eaa78a515d0dc6a8228f4db91efdb653a8c8e9c183063b"
+  },
+  "app/services/materials.py": {
+    "bytes": 4953,
+    "sha256": "4fa5b93ff4542a7f9d591e717c319055b05b0f06d020128ebdb05129448b716d"
+  },
+  "app/ai/curriculum.py": {
+    "bytes": 1329,
+    "sha256": "2a37ee3dbceb96b3effb2e1f1f45d059797566614f0b6d015aeed9a0c07f842d"
+  },
+  "app/ai/viva.py": {
+    "bytes": 1477,
+    "sha256": "121e40428d0085736fc7075479a72b174fe334238cfa4fab6071a232196be286"
+  },
+  "app/ai/vector.py": {
+    "bytes": 2993,
+    "sha256": "daa4103b3228f7e85e234a83da03bd8c45c7698320bea6daea70bc13029e0e20"
+  },
+  "app/ai/providers.py": {
+    "bytes": 3172,
+    "sha256": "e01d4862fa074d53bf41fe7ae5e4f5eca4810f5241a71e525adf5ad0bf997df3"
+  },
+  "app/ai/viva_variation.py": {
+    "bytes": 8087,
+    "sha256": "1af611e9f021c057e618d0ad38cf99e5d4e46d0ddc7f525441d521e783a3ad95"
+  },
+  "app/ai/grounded.py": {
+    "bytes": 13591,
+    "sha256": "3aec536479a5904535f515e5344b72f621c5c16add86830a2a3df8d34c536b59"
+  },
+  "app/ai/retrieval.py": {
+    "bytes": 3316,
+    "sha256": "86cbc036eae3d8a4fabbb58c823470fc087676ec9c6021433fa4e47ca0bf5211"
+  },
+  "app/api/learning.py": {
+    "bytes": 12923,
+    "sha256": "755f32e306fe2396374d8a0e909e69cae211acb531da9abc323da1ff1e5ffa63"
+  },
+  "app/api/research.py": {
+    "bytes": 3095,
+    "sha256": "607abf9ed05dd054ecee40cfee8b7f3d878169a5e118e177170a65f4a7e9bfe3"
+  },
+  "app/api/courses.py": {
+    "bytes": 8984,
+    "sha256": "0fac47b90b877d0fb771bf9e59db7a096c1ecd613282850995ab63d2422877e2"
+  },
+  "app/api/teaching.py": {
+    "bytes": 10604,
+    "sha256": "4a1ddb149b328ac3c1e88eef1fb47fd53e843119d4e0679ad0a138ac180b17c1"
+  },
+  "app/api/attachments.py": {
+    "bytes": 1593,
+    "sha256": "10d25082c36a62b16efbd01a20e0f2242b55fc11e2b381f1ab87a5abeb37976a"
+  },
+  "app/api/viva.py": {
+    "bytes": 8165,
+    "sha256": "32d64e0cd90cf2ca626e98fe6d1487c0adadf567f15726cf28e0d37ba34e4703"
+  },
+  "app/api/formal_viva.py": {
+    "bytes": 33365,
+    "sha256": "f199ccbe490a516db062ccc8ef6b5af9ba81a4d51f60299363b10571471df5fe"
+  },
+  "app/api/workflows.py": {
+    "bytes": 3577,
+    "sha256": "755ad8287db5cd5a9aec1060b7e584193653d2db5b9aff9bd72b3aec64c59004"
+  },
+  "app/api/speech.py": {
+    "bytes": 2056,
+    "sha256": "8cb22f9737ecafff1db4205182a62e2a99c4e6514f8ecf38bc3a4372edd87acb"
+  },
+  "app/api/auth.py": {
+    "bytes": 5446,
+    "sha256": "d33f3d91d2f1b386d46c58562cf0f9a7c8ae517516b5cfced83a21c26e5d5605"
+  },
+  "app/api/universal.py": {
+    "bytes": 5974,
+    "sha256": "b18c523c2b825cef510a531d4c74368aff64e0b1f8faa6b4c4612929b6b508af"
+  },
+  "app/api/generation.py": {
+    "bytes": 8152,
+    "sha256": "95d2efbbbae1407ac005581e0d34c92e357a82919099d85181273bd90fa9085c"
+  },
+  "app/api/admin.py": {
+    "bytes": 3409,
+    "sha256": "9c02c1a84010c8b79ee2a8b25ae1cf637f5bfa10e942b3a8d6b422a9cb8b0640"
+  },
+  "app/templates/index.html": {
+    "bytes": 845,
+    "sha256": "86ff8395de0d7ca676abbf56c1fc7acf862646b5090de840b19e684a852047f8"
+  },
+  "app/voice/streaming.py": {
+    "bytes": 5891,
+    "sha256": "1905a4351e9f797180651a85490165e40045c238bcd7a6080b40f641ca22f2de"
+  },
+  "PUBLIC_RELEASE_NOTES.md": {
+    "bytes": 1234,
+    "sha256": "278ea291285703608425aab31a52ff84b131502d9eaea95a93f214dff3214010"
+  }
+}

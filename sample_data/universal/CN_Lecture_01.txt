@@ -1,0 +1,7 @@
+Chapter 1: Local Area Networks
+Section 1.1: Ethernet switching
+An Ethernet switch forwards frames within a local area network. It learns the source MAC address and incoming port from received frames and records that association in its MAC address table. For a known unicast destination, the switch forwards the frame through the associated port, except the incoming port. An unknown unicast destination is flooded to eligible forwarding ports within the same VLAN, except the incoming port. Broadcast frames are also flooded within the broadcast domain.
+Section 1.2: Switches and routers
+A switch commonly forwards Ethernet frames using MAC addresses at the data-link layer. A router forwards IP packets between networks using a routing table at the network layer. A host sends off-subnet traffic to a configured default gateway. Hosts on the same IP subnet can communicate directly at the link layer without sending the packet through a router.
+Section 1.3: Learning and aging
+A switch learns from the source address, not the destination address. Entries can expire through aging when the source is not observed for a period. Dynamic learning allows the table to adapt when a device moves to another port. A MAC table and a routing table contain different kinds of forwarding information.
