@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from fastapi import FastAPI, Request, Depends, HTTPException
 from fastapi.responses import FileResponse,JSONResponse
@@ -40,6 +41,22 @@ def health():
     import os
     return {'max_upload_mib':MAX_UPLOAD//(1024*1024),'stt_configured':bool(os.getenv('SPEECH_API_KEY') and os.getenv('STT_MODEL')),'tts_configured':bool(os.getenv('SPEECH_API_KEY') and os.getenv('TTS_MODEL')),'status':'ok','demo_mode':DEMO_MODE,'version':'0.5.0','voice':'PCM WebSocket with energy VAD, per-turn STT and controlled playback'
         ,'voice_transport':'websocket-pcm-vad','retrieval':'Lexical index with optional Qdrant hybrid search'}
+@app.get('/api/health/mongodb', include_in_schema=False)
+def mongodb_health():
+    uri = os.getenv('MONGODB_URI', '').strip()
+    if not uri:
+        return {'status': 'disabled'}
+    from pymongo import MongoClient
+    from pymongo.errors import PyMongoError
+
+    try:
+        with MongoClient(uri, connectTimeoutMS=3000, serverSelectionTimeoutMS=3000, timeoutMS=4000) as client:
+            client.admin.command('ping')
+    except (PyMongoError, ValueError):
+        # Connection exceptions may include credentials or topology details.
+        return JSONResponse({'status': 'unreachable'}, status_code=503)
+    return {'status': 'connected'}
+
 @app.get('/')
 @app.get('/login')
 @app.get('/register')

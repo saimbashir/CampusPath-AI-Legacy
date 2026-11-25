@@ -39,3 +39,5 @@ uvicorn==0.54.0
 xlsxwriter==3.2.9
 
 websockets==16.1.1
+pymongo==4.20.1
+dnspython==2.8.0

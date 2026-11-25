@@ -14,3 +14,4 @@ pytest>=8,<10
 Pillow>=10,<13
 
 websockets>=13,<17
+pymongo>=4.20.1,<5
