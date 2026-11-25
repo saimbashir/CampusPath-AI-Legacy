@@ -15,3 +15,4 @@ Pillow>=10,<13
 
 websockets>=13,<17
 pymongo>=4.20.1,<5
+psycopg[binary]>=3.2,<4

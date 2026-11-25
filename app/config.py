@@ -3,7 +3,11 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 ROOT = Path(__file__).resolve().parent.parent
-DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///' + str(ROOT / 'campuspath.db'))
+DATABASE_URL = os.getenv('DATABASE_URL', '').strip() or 'sqlite:///' + str(ROOT / 'campuspath.db')
+for prefix in ('postgres://', 'postgresql://'):
+    if DATABASE_URL.startswith(prefix):
+        DATABASE_URL = 'postgresql+psycopg://' + DATABASE_URL[len(prefix):]
+        break
 DEMO_MODE = os.getenv('DEMO_MODE', 'true').lower() == 'true'
 COOKIE_SECURE = os.getenv('COOKIE_SECURE', 'false').lower() == 'true'
 SESSION_HOURS = 8
